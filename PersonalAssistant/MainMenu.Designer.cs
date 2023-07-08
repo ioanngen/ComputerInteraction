@@ -65,6 +65,7 @@
             button2.TabIndex = 1;
             button2.Text = "Contacts";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -141,6 +142,7 @@
             button9.TabIndex = 9;
             button9.Text = "Search";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 

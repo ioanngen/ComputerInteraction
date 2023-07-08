@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalAssistant", "PersonalAssistant.csproj", "{11551F6D-BB18-48B8-810A-7B9BFAAE7A7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping", "..\Shopping\Shopping.csproj", "{061EAB3C-D1BC-4587-B03D-0594B3E76F65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicPlayer", "..\MusicPlayer\MusicPlayer.csproj", "{168CDC40-9BD2-4908-BCE9-B01B0ACE215D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailClient", "..\EmailClient\EmailClient.csproj", "{B5A99048-0E49-4C5A-8228-90DC13B52EBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forms Appointments", "..\Forms Appointments\Forms Appointments.csproj", "{8368B485-A905-4D48-8F87-33BE95D6E813}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SettingsForm", "..\SettingsForm\SettingsForm.csproj", "{56577282-63FA-48DA-A49F-C451F4DC2679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11551F6D-BB18-48B8-810A-7B9BFAAE7A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11551F6D-BB18-48B8-810A-7B9BFAAE7A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11551F6D-BB18-48B8-810A-7B9BFAAE7A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11551F6D-BB18-48B8-810A-7B9BFAAE7A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061EAB3C-D1BC-4587-B03D-0594B3E76F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061EAB3C-D1BC-4587-B03D-0594B3E76F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061EAB3C-D1BC-4587-B03D-0594B3E76F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061EAB3C-D1BC-4587-B03D-0594B3E76F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{168CDC40-9BD2-4908-BCE9-B01B0ACE215D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168CDC40-9BD2-4908-BCE9-B01B0ACE215D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168CDC40-9BD2-4908-BCE9-B01B0ACE215D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168CDC40-9BD2-4908-BCE9-B01B0ACE215D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A99048-0E49-4C5A-8228-90DC13B52EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A99048-0E49-4C5A-8228-90DC13B52EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A99048-0E49-4C5A-8228-90DC13B52EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A99048-0E49-4C5A-8228-90DC13B52EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8368B485-A905-4D48-8F87-33BE95D6E813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8368B485-A905-4D48-8F87-33BE95D6E813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8368B485-A905-4D48-8F87-33BE95D6E813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8368B485-A905-4D48-8F87-33BE95D6E813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56577282-63FA-48DA-A49F-C451F4DC2679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56577282-63FA-48DA-A49F-C451F4DC2679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56577282-63FA-48DA-A49F-C451F4DC2679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56577282-63FA-48DA-A49F-C451F4DC2679}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EA5DE5D-F8B8-4822-8921-C42530C8B7EE}
+	EndGlobalSection
+EndGlobal

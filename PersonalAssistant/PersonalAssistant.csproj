@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\repos\EmailClient\EmailClient.csproj" />
-    <ProjectReference Include="..\..\..\..\..\source\repos\Forms Appointments\Forms Appointments.csproj" />
-    <ProjectReference Include="..\..\..\..\..\source\repos\SettingsForm\SettingsForm.csproj" />
+    <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
+    <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
+    <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
     <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
     <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
     <ProjectReference Include="..\MusicPlayer\MusicPlayer.csproj" />

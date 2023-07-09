@@ -58,5 +58,6 @@ namespace PersonalAssistant
             var newform = new ContactsForm();
             newform.Show();
         }
+
     }
 }

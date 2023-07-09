@@ -131,6 +131,7 @@
             this.button8.Size = new System.Drawing.Size(75, 57);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
+
             // 
             // textBox1
             // 

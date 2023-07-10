@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,8 +43,11 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.pbNews = new System.Windows.Forms.PictureBox();
+            this.tmrNews = new System.Windows.Forms.Timer(this.components);
+            this.imageListNews = new System.Windows.Forms.ImageList(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pbNews)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -67,6 +71,7 @@
             this.button2.Size = new System.Drawing.Size(60, 59);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 
@@ -93,12 +98,13 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(790, 421);
+            this.button5.Location = new System.Drawing.Point(790, 374);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(73, 71);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // button6
             // 
@@ -125,25 +131,26 @@
             // button8
             // 
             this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.Location = new System.Drawing.Point(134, 108);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 57);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
-
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(310, 319);
+            this.textBox1.Location = new System.Drawing.Point(262, 300);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Search the Internet";
-            this.textBox1.Size = new System.Drawing.Size(159, 27);
+            this.textBox1.Size = new System.Drawing.Size(210, 27);
             this.textBox1.TabIndex = 8;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(510, 319);
+            this.button9.Location = new System.Drawing.Point(541, 298);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(122, 29);
             this.button9.TabIndex = 9;
@@ -160,6 +167,7 @@
             this.button10.Size = new System.Drawing.Size(73, 69);
             this.button10.TabIndex = 10;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
             // 
             // button11
             // 
@@ -171,6 +179,7 @@
             this.button11.Size = new System.Drawing.Size(75, 60);
             this.button11.TabIndex = 11;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // button12
             // 
@@ -183,15 +192,7 @@
             this.button12.Size = new System.Drawing.Size(94, 65);
             this.button12.TabIndex = 12;
             this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(310, 374);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(322, 68);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "News";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // button14
             // 
@@ -205,6 +206,25 @@
             this.button14.TabIndex = 14;
             this.button14.UseVisualStyleBackColor = true;
             // 
+            // pbNews
+            // 
+            this.pbNews.Location = new System.Drawing.Point(247, 358);
+            this.pbNews.Name = "pbNews";
+            this.pbNews.Size = new System.Drawing.Size(494, 89);
+            this.pbNews.TabIndex = 15;
+            this.pbNews.TabStop = false;
+            // 
+            // tmrNews
+            // 
+            this.tmrNews.Enabled = true;
+            this.tmrNews.Interval = 300;
+            // 
+            // imageListNews
+            // 
+            this.imageListNews.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
+            this.imageListNews.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageListNews.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -212,8 +232,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 501);
+            this.Controls.Add(this.pbNews);
             this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -229,6 +249,7 @@
             this.Controls.Add(this.button1);
             this.Name = "MainMenu";
             this.Text = "Personal Assisant";
+            ((System.ComponentModel.ISupportInitialize)(this.pbNews)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +270,9 @@
         private Button button10;
         private Button button11;
         private Button button12;
-        private Button button13;
         private Button button14;
+        private PictureBox pbNews;
+        private System.Windows.Forms.Timer tmrNews;
+        private ImageList imageListNews;
     }
 }

@@ -18,6 +18,7 @@
     <ProjectReference Include="..\MusicPlayer\MusicPlayer.csproj" />
     <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
     <ProjectReference Include="..\Shopping\Shopping.csproj" />
+    <ProjectReference Include="..\Smart_Home\Smart_Home.csproj" />
   </ItemGroup>
 
   <ItemGroup>

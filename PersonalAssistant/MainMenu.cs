@@ -4,6 +4,7 @@ using SettingsForm;
 using Shopping;
 using MusicPlayer;
 using Contacts;
+using Smart_Home;
 
 namespace PersonalAssistant
 {
@@ -55,7 +56,18 @@ namespace PersonalAssistant
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
             var newform = new ContactsForm();
+            newform.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var newform = new SmartHome();
             newform.Show();
         }
     }

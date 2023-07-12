@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
             listBox1 = new ListBox();
             button1 = new Button();
             textBox1 = new TextBox();
@@ -44,6 +45,7 @@
             helpToolStripMenuItem = new ToolStripMenuItem();
             dateTimePicker1 = new DateTimePicker();
             toolTip1 = new ToolTip(components);
+            button6 = new Button();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -60,7 +62,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 431);
+            button1.Location = new Point(12, 441);
             button1.Name = "button1";
             button1.Size = new Size(122, 29);
             button1.TabIndex = 2;
@@ -102,7 +104,7 @@
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripProgressBar1 });
-            statusStrip1.Location = new Point(0, 463);
+            statusStrip1.Location = new Point(0, 473);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(486, 23);
             statusStrip1.TabIndex = 6;
@@ -169,11 +171,24 @@
             // 
             toolTip1.Popup += toolTip1_Popup;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(439, 431);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 9;
+            toolTip1.SetToolTip(button6, "Help");
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Calendar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(486, 486);
+            ClientSize = new Size(486, 496);
+            Controls.Add(button6);
             Controls.Add(dateTimePicker1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
@@ -211,5 +226,6 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private DateTimePicker dateTimePicker1;
         private ToolTip toolTip1;
+        private Button button6;
     }
 }

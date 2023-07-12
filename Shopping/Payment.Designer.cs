@@ -35,6 +35,7 @@
             textBox4 = new TextBox();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -90,12 +91,24 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(437, 401);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 6;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Payment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 243, 243);
             ClientSize = new Size(484, 450);
+            Controls.Add(button6);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(textBox4);
@@ -117,5 +130,6 @@
         private TextBox textBox4;
         private Button button1;
         private PictureBox pictureBox1;
+        private Button button6;
     }
 }

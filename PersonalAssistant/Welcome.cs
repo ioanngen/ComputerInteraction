@@ -32,7 +32,7 @@ namespace PersonalAssistant
                 const string caption = "Unsigned Fields";
                 var result = MessageBox.Show(message, caption, MessageBoxButtons.OK);
             }
-            else if(textBox1.Text == "User" && textBox2.Text == "User")
+            else if (textBox1.Text == "User" && textBox2.Text == "User")
             {
                 var newform = new MainMenu();
                 newform.Show();

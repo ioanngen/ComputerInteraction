@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmailAccount));
             groupBox1 = new GroupBox();
             label4 = new Label();
             label3 = new Label();
@@ -40,11 +41,13 @@
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
+            button6 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(button6);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
@@ -157,6 +160,17 @@
             textBox1.Size = new Size(310, 27);
             textBox1.TabIndex = 0;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(6, 486);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 11;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // EmailAccount
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -187,5 +201,6 @@
         private Label label4;
         private Label label3;
         private Label label2;
+        private Button button6;
     }
 }

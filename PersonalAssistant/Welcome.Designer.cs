@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            button6 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -93,11 +95,23 @@
             label2.TabIndex = 11;
             label2.Text = "Fields with * are required.";
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(382, 12);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 12;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Welcome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(429, 442);
+            Controls.Add(button6);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -118,5 +132,6 @@
         private TextBox textBox2;
         private Label label1;
         private Label label2;
+        private Button button6;
     }
 }

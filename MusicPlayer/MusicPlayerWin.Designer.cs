@@ -39,6 +39,7 @@
             button5 = new Button();
             pictureBox1 = new PictureBox();
             toolTip1 = new ToolTip(components);
+            button6 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -139,11 +140,24 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(460, 463);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 2;
+            toolTip1.SetToolTip(button6, "Help");
+            button6.UseVisualStyleBackColor = true;
+            // 
             // MusicPlayerWin
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(512, 512);
+            Controls.Add(button6);
             Controls.Add(pictureBox1);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -172,5 +186,6 @@
         private Button button5;
         private PictureBox pictureBox1;
         private ToolTip toolTip1;
+        private Button button6;
     }
 }

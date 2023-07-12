@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order));
             listBox1 = new ListBox();
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
+            button6 = new Button();
             SuspendLayout();
             // 
             // listBox1
@@ -74,12 +76,24 @@
             label1.TabIndex = 4;
             label1.Text = "Your Items:";
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(753, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 5;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Order
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(800, 450);
+            Controls.Add(button6);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -97,5 +111,6 @@
         private Button button1;
         private Button button2;
         private Label label1;
+        private Button button6;
     }
 }

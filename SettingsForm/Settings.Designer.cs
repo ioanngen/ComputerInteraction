@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             tabPage1 = new TabPage();
+            radioButton1 = new RadioButton();
+            label4 = new Label();
+            comboBox1 = new ComboBox();
             label3 = new Label();
             tabControl1 = new TabControl();
-            comboBox1 = new ComboBox();
             tabPage2 = new TabPage();
+            label1 = new Label();
             textBox6 = new TextBox();
             textBox4 = new TextBox();
             label2 = new Label();
@@ -44,9 +48,7 @@
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox7 = new TextBox();
-            label1 = new Label();
-            label4 = new Label();
-            radioButton1 = new RadioButton();
+            button6 = new Button();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -96,6 +98,37 @@
             tabPage1.Text = "General";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(115, 76);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(137, 24);
+            radioButton1.TabIndex = 7;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Age Restrictions";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(32, 33);
+            label4.Name = "label4";
+            label4.Size = new Size(77, 20);
+            label4.TabIndex = 6;
+            label4.Text = "Language:";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
+            comboBox1.Location = new Point(115, 30);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(214, 28);
+            comboBox1.TabIndex = 5;
+            comboBox1.Text = "English";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -113,17 +146,6 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(672, 411);
             tabControl1.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
-            comboBox1.Location = new Point(115, 30);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(214, 28);
-            comboBox1.TabIndex = 5;
-            comboBox1.Text = "English";
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // tabPage2
             // 
@@ -144,6 +166,15 @@
             tabPage2.Text = "User";
             tabPage2.UseVisualStyleBackColor = true;
             tabPage2.Click += tabPage2_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(37, 252);
+            label1.Name = "label1";
+            label1.Size = new Size(160, 20);
+            label1.TabIndex = 22;
+            label1.Text = "Change your Password:";
             // 
             // textBox6
             // 
@@ -214,40 +245,23 @@
             textBox7.TabIndex = 14;
             textBox7.Text = "User";
             // 
-            // label1
+            // button6
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(37, 252);
-            label1.Name = "label1";
-            label1.Size = new Size(160, 20);
-            label1.TabIndex = 22;
-            label1.Text = "Change your Password:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(32, 33);
-            label4.Name = "label4";
-            label4.Size = new Size(77, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Language:";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(115, 76);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(137, 24);
-            radioButton1.TabIndex = 7;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Age Restrictions";
-            radioButton1.UseVisualStyleBackColor = true;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(9, 413);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 4;
+            button6.UseVisualStyleBackColor = true;
             // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(682, 453);
+            Controls.Add(button6);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -286,5 +300,6 @@
         private Label label1;
         private RadioButton radioButton1;
         private Label label4;
+        private Button button6;
     }
 }

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingList));
             listBox1 = new ListBox();
             button1 = new Button();
             textBox1 = new TextBox();
             button2 = new Button();
             button3 = new Button();
             textBox2 = new TextBox();
+            button6 = new Button();
             SuspendLayout();
             // 
             // listBox1
@@ -92,12 +94,24 @@
             textBox2.Size = new Size(154, 27);
             textBox2.TabIndex = 5;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(12, 49);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 6;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // ShoppingList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(678, 402);
+            Controls.Add(button6);
             Controls.Add(textBox2);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -118,5 +132,6 @@
         private Button button2;
         private Button button3;
         private TextBox textBox2;
+        private Button button6;
     }
 }

@@ -40,6 +40,7 @@
             TreeNode treeNode9 = new TreeNode("Scheduled");
             TreeNode treeNode10 = new TreeNode("Folders", new TreeNode[] { treeNode7, treeNode8, treeNode9 });
             TreeNode treeNode11 = new TreeNode("Account", new TreeNode[] { treeNode1, treeNode2, treeNode3, treeNode4, treeNode5, treeNode6, treeNode10 });
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WebMail));
             statusStrip1 = new StatusStrip();
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
@@ -79,6 +80,7 @@
             dataGridView1 = new DataGridView();
             notifyIcon1 = new NotifyIcon(components);
             toolTip1 = new ToolTip(components);
+            button6 = new Button();
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -305,6 +307,7 @@
             tableLayoutPanel2.Controls.Add(textBox3, 1, 2);
             tableLayoutPanel2.Controls.Add(textBox4, 1, 3);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 1, 4);
+            tableLayoutPanel2.Controls.Add(button6, 0, 4);
             tableLayoutPanel2.Location = new Point(487, 38);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 5;
@@ -440,6 +443,18 @@
             notifyIcon1.Visible = true;
             notifyIcon1.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(3, 499);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 9;
+            toolTip1.SetToolTip(button6, "Help");
+            button6.UseVisualStyleBackColor = true;
+            // 
             // WebMail
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -503,5 +518,6 @@
         private NotifyIcon notifyIcon1;
         private DataGridView dataGridView1;
         private ToolTip toolTip1;
+        private Button button6;
     }
 }

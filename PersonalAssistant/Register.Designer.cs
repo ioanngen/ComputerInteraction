@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             button1 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
@@ -42,6 +43,7 @@
             button2 = new Button();
             label3 = new Label();
             toolTip1 = new ToolTip(components);
+            button6 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -149,11 +151,24 @@
             label3.TabIndex = 13;
             label3.Text = "Sign the Below fileds to Register:";
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(451, 12);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 14;
+            toolTip1.SetToolTip(button6, "Help");
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(497, 450);
+            Controls.Add(button6);
             Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(label2);
@@ -187,5 +202,6 @@
         private Button button2;
         private Label label3;
         private ToolTip toolTip1;
+        private Button button6;
     }
 }

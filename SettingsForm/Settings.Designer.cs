@@ -49,6 +49,8 @@
             textBox2 = new TextBox();
             textBox7 = new TextBox();
             button6 = new Button();
+            label5 = new Label();
+            comboBox2 = new ComboBox();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -86,6 +88,8 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label5);
+            tabPage1.Controls.Add(comboBox2);
             tabPage1.Controls.Add(radioButton1);
             tabPage1.Controls.Add(label4);
             tabPage1.Controls.Add(comboBox1);
@@ -101,7 +105,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(115, 76);
+            radioButton1.Location = new Point(115, 139);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(137, 24);
             radioButton1.TabIndex = 7;
@@ -112,21 +116,21 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(32, 33);
+            label4.Location = new Point(32, 89);
             label4.Name = "label4";
-            label4.Size = new Size(77, 20);
+            label4.Size = new Size(69, 20);
             label4.TabIndex = 6;
-            label4.Text = "Language:";
+            label4.Text = "Location:";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
-            comboBox1.Location = new Point(115, 30);
+            comboBox1.Items.AddRange(new object[] { "Athens", "Patra", "Thessaloniki", "Kalamata", "Kifissia", "Glyfada", "Neos Voutzas", "Penteli", "Aigaleo" });
+            comboBox1.Location = new Point(115, 86);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(214, 28);
             comboBox1.TabIndex = 5;
-            comboBox1.Text = "English";
+            comboBox1.Text = "Athens";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label3
@@ -256,6 +260,25 @@
             button6.TabIndex = 4;
             button6.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(32, 44);
+            label5.Name = "label5";
+            label5.Size = new Size(77, 20);
+            label5.TabIndex = 9;
+            label5.Text = "Language:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
+            comboBox2.Location = new Point(115, 41);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(214, 28);
+            comboBox2.TabIndex = 8;
+            comboBox2.Text = "English";
+            // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -301,5 +324,7 @@
         private RadioButton radioButton1;
         private Label label4;
         private Button button6;
+        private Label label5;
+        private ComboBox comboBox2;
     }
 }

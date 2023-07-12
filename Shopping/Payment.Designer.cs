@@ -36,6 +36,7 @@
             button1 = new Button();
             pictureBox1 = new PictureBox();
             button6 = new Button();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -102,12 +103,22 @@
             button6.TabIndex = 6;
             button6.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(164, 321);
+            label2.Name = "label2";
+            label2.Size = new Size(155, 20);
+            label2.TabIndex = 11;
+            label2.Text = "All fields are required.";
+            // 
             // Payment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 243, 243);
             ClientSize = new Size(484, 450);
+            Controls.Add(label2);
             Controls.Add(button6);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
@@ -131,5 +142,6 @@
         private Button button1;
         private PictureBox pictureBox1;
         private Button button6;
+        private Label label2;
     }
 }

@@ -5,35 +5,39 @@ using Shopping;
 using MusicPlayer;
 using Contacts;
 using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
 
 namespace PersonalAssistant
 {
     public partial class MainMenu : Form
     {
+        public int newsIndex = 1;
+        public string path = @"C:\Users\spiro\Desktop\I.C.E\Semesters\(8)Eighth Semester\Human Computer Interaction\PA\ComputerInteraction\NewsImages\";
+        public List<string> NewsImages
+        {
+            get
+            {
+                return new List<string>
+                {
+                    path+@"news1.png",
+                    path+@"news2.png",
+                    path+@"news3.png",
+                    path+@"news4.png",
+                    path+@"news5.png"
+                };
+            }
+        }
         public MainMenu()
         {
             InitializeComponent();
         }
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            DisplayNews();
+        
         }
+        
 
-        private void DisplayNews()
-        {
-            List<string> imagePaths = new List<string>()
-            {
-                "C:\\Users\\spiro\\Desktop\\I.C.E\\Semesters\\(8)Eighth Semester\\Human Computer Interaction\\PA\\ComputerInteraction\\NewsImages\\news1.png",
-                "C:\\Users\\spiro\\Desktop\\I.C.E\\Semesters\\(8)Eighth Semester\\Human Computer Interaction\\PA\\ComputerInteraction\\NewsImages\\news2.png",
-            };
-            foreach (string imagePath in imagePaths)
-            {
-                Image image = Image.FromFile(imagePath);
-                pbNews.Image = image;
-                Thread.Sleep(1000);
-                pbNews.Refresh();
-            }
-        }
         private void button9_Click(object sender, EventArgs e)
         {
 
@@ -73,6 +77,20 @@ namespace PersonalAssistant
         {
             var newform = new ContactsForm();
             newform.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            newsIndex++;
+            if (newsIndex>4)
+            {
+                pbNews.Image = Image.FromFile(NewsImages[0]);
+                newsIndex= 0;
+            }
+            else
+            {
+                pbNews.Image = Image.FromFile(NewsImages[newsIndex]);
+            }
         }
     }
 }

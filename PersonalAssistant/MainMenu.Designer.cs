@@ -44,9 +44,10 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.pbNews = new System.Windows.Forms.PictureBox();
             this.tmrNews = new System.Windows.Forms.Timer(this.components);
             this.imageListNews = new System.Windows.Forms.ImageList(this.components);
+            this.pbNews = new System.Windows.Forms.PictureBox();
+            this.LoadNews = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbNews)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,10 +99,10 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(790, 374);
+            this.button5.Location = new System.Drawing.Point(831, 449);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(73, 71);
+            this.button5.Size = new System.Drawing.Size(49, 43);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
@@ -150,7 +151,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(541, 298);
+            this.button9.Location = new System.Drawing.Point(558, 300);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(122, 29);
             this.button9.TabIndex = 9;
@@ -206,14 +207,6 @@
             this.button14.TabIndex = 14;
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // pbNews
-            // 
-            this.pbNews.Location = new System.Drawing.Point(247, 358);
-            this.pbNews.Name = "pbNews";
-            this.pbNews.Size = new System.Drawing.Size(494, 89);
-            this.pbNews.TabIndex = 15;
-            this.pbNews.TabStop = false;
-            // 
             // tmrNews
             // 
             this.tmrNews.Enabled = true;
@@ -225,6 +218,27 @@
             this.imageListNews.ImageSize = new System.Drawing.Size(16, 16);
             this.imageListNews.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // pbNews
+            // 
+            this.pbNews.Image = ((System.Drawing.Image)(resources.GetObject("pbNews.Image")));
+            this.pbNews.Location = new System.Drawing.Point(262, 358);
+            this.pbNews.Name = "pbNews";
+            this.pbNews.Size = new System.Drawing.Size(418, 98);
+            this.pbNews.TabIndex = 15;
+            this.pbNews.TabStop = false;
+            // 
+            // LoadNews
+            // 
+            this.LoadNews.FlatAppearance.BorderSize = 0;
+            this.LoadNews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoadNews.Image = ((System.Drawing.Image)(resources.GetObject("LoadNews.Image")));
+            this.LoadNews.Location = new System.Drawing.Point(698, 358);
+            this.LoadNews.Name = "LoadNews";
+            this.LoadNews.Size = new System.Drawing.Size(71, 69);
+            this.LoadNews.TabIndex = 16;
+            this.LoadNews.UseVisualStyleBackColor = true;
+            this.LoadNews.Click += new System.EventHandler(this.button13_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -232,6 +246,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 501);
+            this.Controls.Add(this.LoadNews);
             this.Controls.Add(this.pbNews);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button12);
@@ -271,8 +286,9 @@
         private Button button11;
         private Button button12;
         private Button button14;
-        private PictureBox pbNews;
         private System.Windows.Forms.Timer tmrNews;
         private ImageList imageListNews;
+        private PictureBox pbNews;
+        private Button LoadNews;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SmartHome));
             backroundpicture = new PictureBox();
             pictureBox1 = new PictureBox();
             label1 = new Label();
@@ -59,19 +60,12 @@
             radioButton16 = new RadioButton();
             radioButton17 = new RadioButton();
             radioButton18 = new RadioButton();
-            pictureBox2 = new PictureBox();
             label3 = new Label();
             button2 = new Button();
             button7 = new Button();
             label4 = new Label();
             label13 = new Label();
-            pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -89,24 +83,19 @@
             button13 = new Button();
             button14 = new Button();
             button15 = new Button();
-            pictureBox12 = new PictureBox();
             lampImagelist = new ImageList(components);
             pictureBox10 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBoxLamp1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)backroundpicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLamp1).BeginInit();
             SuspendLayout();
             // 
             // backroundpicture
@@ -121,7 +110,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.TempRing;
+            pictureBox1.Image = Properties.Resources.hoop;
             pictureBox1.Location = new Point(849, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(200, 200);
@@ -454,16 +443,6 @@
             radioButton18.Text = "Living Room 1";
             radioButton18.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.Random_House_Picture;
-            pictureBox2.Location = new Point(816, 477);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(256, 256);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 16;
-            pictureBox2.TabStop = false;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -514,16 +493,6 @@
             label13.TabIndex = 29;
             label13.Text = "Air Conditioner Angle: 30";
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.Closed_light;
-            pictureBox3.Location = new Point(762, 330);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(41, 62);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 32;
-            pictureBox3.TabStop = false;
-            // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Closed_light;
@@ -533,56 +502,6 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 33;
             pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.Closed_light;
-            pictureBox5.Location = new Point(325, 366);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(41, 62);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 34;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = Properties.Resources.Closed_light;
-            pictureBox6.Location = new Point(82, 330);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(41, 62);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 35;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources.Closed_light;
-            pictureBox7.Location = new Point(404, 165);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(41, 62);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 36;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = Properties.Resources.Closed_light;
-            pictureBox8.Location = new Point(612, 128);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(41, 62);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 37;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Image = Properties.Resources.Closed_light;
-            pictureBox9.Location = new Point(160, 118);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(41, 62);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 38;
-            pictureBox9.TabStop = false;
             // 
             // label5
             // 
@@ -736,6 +655,7 @@
             button14.TabIndex = 55;
             button14.Text = "On/Off";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // button15
             // 
@@ -746,21 +666,13 @@
             button15.Text = "On/Off";
             button15.UseVisualStyleBackColor = true;
             // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = Properties.Resources.Closed_light;
-            pictureBox12.Location = new Point(658, 340);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(41, 62);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 56;
-            pictureBox12.TabStop = false;
-            // 
             // lampImagelist
             // 
-            lampImagelist.ColorDepth = ColorDepth.Depth32Bit;
-            lampImagelist.ImageSize = new Size(256, 256);
+            lampImagelist.ColorDepth = ColorDepth.Depth24Bit;
+            lampImagelist.ImageStream = (ImageListStreamer)resources.GetObject("lampImagelist.ImageStream");
             lampImagelist.TransparentColor = Color.Transparent;
+            lampImagelist.Images.SetKeyName(0, "Opened_light.png");
+            lampImagelist.Images.SetKeyName(1, "Closed_light.png");
             // 
             // pictureBox10
             // 
@@ -772,14 +684,33 @@
             pictureBox10.TabIndex = 58;
             pictureBox10.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.Random_House_Picture;
+            pictureBox2.Location = new Point(816, 477);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(256, 256);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 16;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBoxLamp1
+            // 
+            pictureBoxLamp1.Location = new Point(74, 328);
+            pictureBoxLamp1.Name = "pictureBoxLamp1";
+            pictureBoxLamp1.Size = new Size(100, 50);
+            pictureBoxLamp1.TabIndex = 59;
+            pictureBoxLamp1.TabStop = false;
+            pictureBoxLamp1.Click += pictureBox3_Click;
+            // 
             // SmartHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1078, 740);
+            Controls.Add(pictureBoxLamp1);
             Controls.Add(pictureBox10);
             Controls.Add(button15);
-            Controls.Add(pictureBox12);
             Controls.Add(button14);
             Controls.Add(button13);
             Controls.Add(button12);
@@ -796,13 +727,7 @@
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(pictureBox9);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
             Controls.Add(label13);
             Controls.Add(label4);
             Controls.Add(button7);
@@ -830,17 +755,11 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLamp1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -877,19 +796,12 @@
         private RadioButton radioButton16;
         private RadioButton radioButton17;
         private RadioButton radioButton18;
-        private PictureBox pictureBox2;
         private Label label3;
         private Button button2;
         private Button button7;
         private Label label4;
         private Label label13;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -907,9 +819,10 @@
         private Button button13;
         private Button button14;
         private Button button15;
-        private PictureBox pictureBox12;
         private Button button16;
         private ImageList lampImagelist;
         private PictureBox pictureBox10;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBoxLamp1;
     }
 }

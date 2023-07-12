@@ -5,6 +5,7 @@ using Shopping;
 using MusicPlayer;
 using Contacts;
 using Smart_Home;
+using CallsAndMessages;
 
 namespace PersonalAssistant
 {
@@ -68,6 +69,12 @@ namespace PersonalAssistant
         private void button4_Click(object sender, EventArgs e)
         {
             var newform = new SmartHome();
+            newform.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var newform = new CallsAndMessagesForm();
             newform.Show();
         }
     }

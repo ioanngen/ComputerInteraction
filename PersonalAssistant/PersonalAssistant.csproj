@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CallsAndMessages\CallsAndMessages.csproj" />
     <ProjectReference Include="..\Contacts\Contacts.csproj" />
     <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
     <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />

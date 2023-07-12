@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             listBox1 = new ListBox();
             button1 = new Button();
             textBox1 = new TextBox();
@@ -42,6 +43,7 @@
             viewToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             dateTimePicker1 = new DateTimePicker();
+            toolTip1 = new ToolTip(components);
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -92,6 +94,7 @@
             button2.Size = new Size(122, 29);
             button2.TabIndex = 5;
             button2.Text = "Create";
+            toolTip1.SetToolTip(button2, "Creates New Appointment");
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -162,6 +165,10 @@
             dateTimePicker1.TabIndex = 8;
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
+            // toolTip1
+            // 
+            toolTip1.Popup += toolTip1_Popup;
+            // 
             // Calendar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -203,5 +210,6 @@
         private ToolStripMenuItem viewToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private DateTimePicker dateTimePicker1;
+        private ToolTip toolTip1;
     }
 }

@@ -59,9 +59,11 @@
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(textBox1);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(10, 9);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(408, 529);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(357, 397);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Account Details";
@@ -71,53 +73,56 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(6, 486);
+            button6.Location = new Point(5, 351);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(35, 37);
+            button6.Size = new Size(40, 41);
             button6.TabIndex = 11;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(37, 180);
+            label4.Location = new Point(32, 135);
             label4.Name = "label4";
-            label4.Size = new Size(49, 20);
+            label4.Size = new Size(40, 15);
             label4.TabIndex = 10;
             label4.Text = "SMTP:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(48, 119);
+            label3.Location = new Point(42, 89);
             label3.Name = "label3";
-            label3.Size = new Size(38, 20);
+            label3.Size = new Size(32, 15);
             label3.TabIndex = 9;
             label3.Text = "Port:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(13, 91);
+            label2.Location = new Point(11, 68);
             label2.Name = "label2";
-            label2.Size = new Size(73, 20);
+            label2.Size = new Size(60, 15);
             label2.TabIndex = 8;
             label2.Text = "Password:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(8, 54);
+            label1.Location = new Point(7, 40);
             label1.Name = "label1";
-            label1.Size = new Size(78, 20);
+            label1.Size = new Size(63, 15);
             label1.TabIndex = 7;
             label1.Text = "Username:";
             // 
             // button2
             // 
-            button2.Location = new Point(208, 494);
+            button2.Location = new Point(182, 361);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(82, 31);
             button2.TabIndex = 6;
             button2.Text = "Cancel";
             button2.UseVisualStyleBackColor = true;
@@ -125,9 +130,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(308, 494);
+            button1.Location = new Point(270, 361);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 31);
             button1.TabIndex = 5;
             button1.Text = "OK";
             button1.UseVisualStyleBackColor = true;
@@ -136,50 +142,59 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(290, 119);
+            checkBox1.Location = new Point(254, 89);
+            checkBox1.Margin = new Padding(3, 2, 3, 2);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(54, 24);
+            checkBox1.Size = new Size(44, 19);
             checkBox1.TabIndex = 4;
             checkBox1.Text = "SSL";
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(92, 84);
+            textBox4.Location = new Point(80, 63);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(310, 27);
+            textBox4.PasswordChar = '*';
+            textBox4.Size = new Size(272, 23);
             textBox4.TabIndex = 3;
+            textBox4.Text = "User";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(92, 180);
+            textBox3.Location = new Point(80, 135);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(310, 27);
+            textBox3.Size = new Size(272, 23);
             textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(92, 117);
+            textBox2.Location = new Point(80, 88);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
+            textBox2.Size = new Size(110, 23);
             textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(92, 51);
+            textBox1.Location = new Point(80, 38);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(310, 27);
+            textBox1.Size = new Size(272, 23);
             textBox1.TabIndex = 0;
+            textBox1.Text = "User";
             // 
             // EmailAccount
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(432, 553);
+            ClientSize = new Size(380, 421);
             Controls.Add(groupBox1);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
-            MaximumSize = new Size(450, 600);
-            MinimumSize = new Size(450, 600);
+            MaximumSize = new Size(396, 460);
+            MinimumSize = new Size(396, 460);
             Name = "EmailAccount";
             Text = "EmailAccount";
             groupBox1.ResumeLayout(false);

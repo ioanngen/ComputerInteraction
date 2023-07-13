@@ -30,9 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SendEmail));
-            statusStrip1 = new StatusStrip();
-            toolStripProgressBar1 = new ToolStripProgressBar();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
             fileToolStripMenuItem = new ToolStripMenuItem();
             goBackToolStripMenuItem = new ToolStripMenuItem();
             mainMenuToolStripMenuItem = new ToolStripMenuItem();
@@ -62,28 +59,13 @@
             label4 = new Label();
             textBox4 = new TextBox();
             toolTip1 = new ToolTip(components);
-            statusStrip1.SuspendLayout();
+            statusStrip1 = new StatusStrip();
+            toolStripProgressBar1 = new ToolStripProgressBar();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // statusStrip1
-            // 
-            resources.ApplyResources(statusStrip1, "statusStrip1");
-            statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripProgressBar1, toolStripStatusLabel1 });
-            statusStrip1.Name = "statusStrip1";
-            toolTip1.SetToolTip(statusStrip1, resources.GetString("statusStrip1.ToolTip"));
-            // 
-            // toolStripProgressBar1
-            // 
-            resources.ApplyResources(toolStripProgressBar1, "toolStripProgressBar1");
-            toolStripProgressBar1.Name = "toolStripProgressBar1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            resources.ApplyResources(toolStripStatusLabel1, "toolStripStatusLabel1");
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             // 
             // fileToolStripMenuItem
             // 
@@ -168,6 +150,7 @@
             // 
             resources.ApplyResources(viewHelpToolStripMenuItem, "viewHelpToolStripMenuItem");
             viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
+            viewHelpToolStripMenuItem.Click += viewHelpToolStripMenuItem_Click_1;
             // 
             // menuStrip1
             // 
@@ -258,6 +241,24 @@
             textBox4.Name = "textBox4";
             toolTip1.SetToolTip(textBox4, resources.GetString("textBox4.ToolTip"));
             // 
+            // statusStrip1
+            // 
+            resources.ApplyResources(statusStrip1, "statusStrip1");
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripProgressBar1, toolStripStatusLabel1 });
+            statusStrip1.Name = "statusStrip1";
+            toolTip1.SetToolTip(statusStrip1, resources.GetString("statusStrip1.ToolTip"));
+            // 
+            // toolStripProgressBar1
+            // 
+            resources.ApplyResources(toolStripProgressBar1, "toolStripProgressBar1");
+            toolStripProgressBar1.Name = "toolStripProgressBar1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            resources.ApplyResources(toolStripStatusLabel1, "toolStripStatusLabel1");
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            // 
             // SendEmail
             // 
             resources.ApplyResources(this, "$this");
@@ -270,20 +271,17 @@
             MaximizeBox = false;
             Name = "SendEmail";
             toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
-            statusStrip1.ResumeLayout(false);
-            statusStrip1.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private StatusStrip statusStrip1;
-        private ToolStripProgressBar toolStripProgressBar1;
-        private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem newEmailToolStripMenuItem;
         private ToolStripMenuItem openDraftToolStripMenuItem;
@@ -313,5 +311,8 @@
         private Label label4;
         private TextBox textBox4;
         private ToolTip toolTip1;
+        private ToolStripProgressBar toolStripProgressBar1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private StatusStrip statusStrip1;
     }
 }

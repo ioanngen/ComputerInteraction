@@ -61,7 +61,7 @@
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(12, 15);
             label1.Name = "label1";
-            label1.Size = new Size(130, 23);
+            label1.Size = new Size(104, 21);
             label1.TabIndex = 1;
             label1.Text = "Music Player";
             // 
@@ -151,10 +151,11 @@
             button6.TabIndex = 2;
             toolTip1.SetToolTip(button6, "Help");
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // MusicPlayerWin
             // 
-            AutoScaleDimensions = new SizeF(12F, 23F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(512, 512);
             Controls.Add(button6);

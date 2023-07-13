@@ -40,9 +40,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(292, 401);
+            button1.Location = new Point(538, 293);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(125, 29);
+            button1.Size = new Size(109, 30);
             button1.TabIndex = 0;
             button1.Text = "Log In";
             button1.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(12, 401);
+            button2.Location = new Point(10, 293);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(125, 29);
+            button2.Size = new Size(109, 30);
             button2.TabIndex = 1;
             button2.Text = "Register";
             button2.UseVisualStyleBackColor = true;
@@ -60,28 +62,30 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(65, 248);
+            textBox1.Location = new Point(203, 163);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "*User Name";
-            textBox1.Size = new Size(296, 27);
+            textBox1.Size = new Size(260, 23);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(65, 281);
+            textBox2.Location = new Point(203, 190);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
             textBox2.PasswordChar = '*';
             textBox2.PlaceholderText = "*Password";
-            textBox2.Size = new Size(296, 27);
+            textBox2.Size = new Size(260, 23);
             textBox2.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(124, 140);
+            label1.Location = new Point(270, 80);
             label1.Name = "label1";
-            label1.Size = new Size(173, 56);
+            label1.Size = new Size(140, 42);
             label1.TabIndex = 4;
             label1.Text = "Welcome to your \r\nPersonal Assistant!";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -89,9 +93,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 378);
+            label2.Location = new Point(10, 276);
             label2.Name = "label2";
-            label2.Size = new Size(177, 20);
+            label2.Size = new Size(140, 15);
             label2.TabIndex = 11;
             label2.Text = "Fields with * are required.";
             // 
@@ -100,17 +104,19 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(382, 12);
+            button6.Location = new Point(609, 11);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(35, 37);
+            button6.Size = new Size(38, 39);
             button6.TabIndex = 12;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // Welcome
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(429, 442);
+            ClientSize = new Size(659, 332);
             Controls.Add(button6);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,6 +124,7 @@
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Welcome";
             Text = "Welcome";
             ResumeLayout(false);

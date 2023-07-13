@@ -65,7 +65,6 @@
             button7 = new Button();
             label4 = new Label();
             label13 = new Label();
-            pictureBox4 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -75,27 +74,22 @@
             label11 = new Label();
             label12 = new Label();
             pictureBox11 = new PictureBox();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
+            OnOffButton = new Button();
             button14 = new Button();
-            button15 = new Button();
             lampImagelist = new ImageList(components);
             pictureBox10 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBoxLamp1 = new PictureBox();
+            lampPictureBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)backroundpicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLamp1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lampPictureBox).BeginInit();
             SuspendLayout();
             // 
             // backroundpicture
@@ -493,16 +487,6 @@
             label13.TabIndex = 29;
             label13.Text = "Air Conditioner Angle: 30";
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.Closed_light;
-            pictureBox4.Location = new Point(471, 314);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 62);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 33;
-            pictureBox4.TabStop = false;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -593,86 +577,33 @@
             pictureBox11.TabIndex = 48;
             pictureBox11.TabStop = false;
             // 
-            // button8
+            // OnOffButton
             // 
-            button8.Location = new Point(152, 183);
-            button8.Name = "button8";
-            button8.Size = new Size(57, 23);
-            button8.TabIndex = 49;
-            button8.Text = "On/Off";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(397, 229);
-            button9.Name = "button9";
-            button9.Size = new Size(57, 23);
-            button9.TabIndex = 50;
-            button9.Text = "On/Off";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(604, 191);
-            button10.Name = "button10";
-            button10.Size = new Size(57, 23);
-            button10.TabIndex = 51;
-            button10.Text = "On/Off";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            button11.Location = new Point(746, 393);
-            button11.Name = "button11";
-            button11.Size = new Size(57, 23);
-            button11.TabIndex = 52;
-            button11.Text = "On/Off";
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            button12.Location = new Point(463, 377);
-            button12.Name = "button12";
-            button12.Size = new Size(57, 23);
-            button12.TabIndex = 53;
-            button12.Text = "On/Off";
-            button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            button13.Location = new Point(316, 428);
-            button13.Name = "button13";
-            button13.Size = new Size(57, 23);
-            button13.TabIndex = 54;
-            button13.Text = "On/Off";
-            button13.UseVisualStyleBackColor = true;
+            OnOffButton.Location = new Point(147, 183);
+            OnOffButton.Name = "OnOffButton";
+            OnOffButton.Size = new Size(62, 23);
+            OnOffButton.TabIndex = 49;
+            OnOffButton.Text = "On/Off";
+            OnOffButton.UseVisualStyleBackColor = true;
+            OnOffButton.Click += button8_Click;
             // 
             // button14
             // 
             button14.Location = new Point(74, 393);
             button14.Name = "button14";
-            button14.Size = new Size(57, 23);
+            button14.Size = new Size(52, 23);
             button14.TabIndex = 55;
             button14.Text = "On/Off";
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
-            // 
-            // button15
-            // 
-            button15.Location = new Point(650, 403);
-            button15.Name = "button15";
-            button15.Size = new Size(57, 23);
-            button15.TabIndex = 57;
-            button15.Text = "On/Off";
-            button15.UseVisualStyleBackColor = true;
             // 
             // lampImagelist
             // 
             lampImagelist.ColorDepth = ColorDepth.Depth24Bit;
             lampImagelist.ImageStream = (ImageListStreamer)resources.GetObject("lampImagelist.ImageStream");
             lampImagelist.TransparentColor = Color.Transparent;
-            lampImagelist.Images.SetKeyName(0, "Opened_light.png");
-            lampImagelist.Images.SetKeyName(1, "Closed_light.png");
+            lampImagelist.Images.SetKeyName(0, "Closed_light62x52.png");
+            lampImagelist.Images.SetKeyName(1, "Opened_light62x52.png");
             // 
             // pictureBox10
             // 
@@ -696,28 +627,32 @@
             // 
             // pictureBoxLamp1
             // 
-            pictureBoxLamp1.Location = new Point(74, 328);
+            pictureBoxLamp1.Image = Properties.Resources.Closed_light62x52;
+            pictureBoxLamp1.Location = new Point(74, 325);
             pictureBoxLamp1.Name = "pictureBoxLamp1";
-            pictureBoxLamp1.Size = new Size(100, 50);
+            pictureBoxLamp1.Size = new Size(52, 62);
             pictureBoxLamp1.TabIndex = 59;
             pictureBoxLamp1.TabStop = false;
             pictureBoxLamp1.Click += pictureBox3_Click;
+            // 
+            // lampPictureBox
+            // 
+            lampPictureBox.Location = new Point(152, 115);
+            lampPictureBox.Name = "lampPictureBox";
+            lampPictureBox.Size = new Size(52, 62);
+            lampPictureBox.TabIndex = 60;
+            lampPictureBox.TabStop = false;
             // 
             // SmartHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1078, 740);
+            Controls.Add(lampPictureBox);
             Controls.Add(pictureBoxLamp1);
             Controls.Add(pictureBox10);
-            Controls.Add(button15);
             Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
+            Controls.Add(OnOffButton);
             Controls.Add(pictureBox11);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -727,7 +662,6 @@
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(pictureBox4);
             Controls.Add(label13);
             Controls.Add(label4);
             Controls.Add(button7);
@@ -755,11 +689,11 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLamp1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lampPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -801,7 +735,6 @@
         private Button button7;
         private Label label4;
         private Label label13;
-        private PictureBox pictureBox4;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -811,18 +744,13 @@
         private Label label11;
         private Label label12;
         private PictureBox pictureBox11;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
+        private Button OnOffButton;
         private Button button14;
-        private Button button15;
         private Button button16;
         private ImageList lampImagelist;
         private PictureBox pictureBox10;
         private PictureBox pictureBox2;
         private PictureBox pictureBoxLamp1;
+        private PictureBox lampPictureBox;
     }
 }

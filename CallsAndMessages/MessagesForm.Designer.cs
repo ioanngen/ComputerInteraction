@@ -31,7 +31,7 @@
             NumberLabel = new Label();
             numberTextBox = new TextBox();
             label1 = new Label();
-            textBox2 = new TextBox();
+            messageTextBox = new TextBox();
             buttonSend = new Button();
             buttonCancel = new Button();
             SuspendLayout();
@@ -65,14 +65,14 @@
             label1.Text = "Message:";
             label1.Click += label1_Click;
             // 
-            // textBox2
+            // messageTextBox
             // 
-            textBox2.Location = new Point(12, 89);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(256, 256);
-            textBox2.TabIndex = 3;
-            textBox2.TextChanged += textBox2_TextChanged;
+            messageTextBox.Location = new Point(12, 89);
+            messageTextBox.Multiline = true;
+            messageTextBox.Name = "messageTextBox";
+            messageTextBox.Size = new Size(256, 256);
+            messageTextBox.TabIndex = 3;
+            messageTextBox.TextChanged += textBox2_TextChanged;
             // 
             // buttonSend
             // 
@@ -101,7 +101,7 @@
             ClientSize = new Size(287, 382);
             Controls.Add(buttonCancel);
             Controls.Add(buttonSend);
-            Controls.Add(textBox2);
+            Controls.Add(messageTextBox);
             Controls.Add(label1);
             Controls.Add(numberTextBox);
             Controls.Add(NumberLabel);
@@ -116,7 +116,7 @@
         private Label NumberLabel;
         private TextBox numberTextBox;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox messageTextBox;
         private Button buttonSend;
         private Button buttonCancel;
     }

@@ -73,6 +73,16 @@ namespace Smart_Home.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Closed_light62x52 {
+            get {
+                object obj = ResourceManager.GetObject("Closed_light62x52", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hoop {
             get {
                 object obj = ResourceManager.GetObject("hoop", resourceCulture);
@@ -86,6 +96,26 @@ namespace Smart_Home.Properties {
         internal static System.Drawing.Bitmap minus {
             get {
                 object obj = ResourceManager.GetObject("minus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Opened_light {
+            get {
+                object obj = ResourceManager.GetObject("Opened_light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Opened_light62x52 {
+            get {
+                object obj = ResourceManager.GetObject("Opened_light62x52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

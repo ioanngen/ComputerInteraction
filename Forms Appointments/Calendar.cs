@@ -7,11 +7,6 @@ namespace Forms_Appointments
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (listBox1.Items.Count > 0)
@@ -26,11 +21,6 @@ namespace Forms_Appointments
                                              MessageBoxButtons.OK);
 
             }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,14 +40,15 @@ namespace Forms_Appointments
             }
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
+            const string message = "This is an Appointment Organizer." +
+                                    "In order to add an Appointment to your organizer, type the Appointment Title at the specific " +
+                                    "field and then select the date and time from the Calendar and the Drop Down List below. Then " +
+                                    "click 'Create'. If you want to delete an Appointment from your organizer, you have to select " +
+                                    "it form the list, and click 'Delete'.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

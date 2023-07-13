@@ -58,9 +58,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(376, 417);
+            button1.Location = new Point(328, 309);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 29);
             button1.TabIndex = 1;
             button1.Text = "OK";
             button1.UseVisualStyleBackColor = true;
@@ -68,9 +69,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(476, 417);
+            button2.Location = new Point(416, 309);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(82, 29);
             button2.TabIndex = 2;
             button2.Text = "Cancel";
             button2.UseVisualStyleBackColor = true;
@@ -78,9 +80,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(576, 417);
+            button3.Location = new Point(504, 309);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(82, 29);
             button3.TabIndex = 3;
             button3.Text = "Apply";
             button3.UseVisualStyleBackColor = true;
@@ -94,10 +97,11 @@
             tabPage1.Controls.Add(label4);
             tabPage1.Controls.Add(comboBox1);
             tabPage1.Controls.Add(label3);
-            tabPage1.Location = new Point(4, 29);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Margin = new Padding(3, 2, 3, 2);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(664, 378);
+            tabPage1.Padding = new Padding(3, 2, 3, 2);
+            tabPage1.Size = new Size(580, 271);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "General";
             tabPage1.UseVisualStyleBackColor = true;
@@ -105,9 +109,9 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(32, 44);
+            label5.Location = new Point(28, 33);
             label5.Name = "label5";
-            label5.Size = new Size(77, 20);
+            label5.Size = new Size(62, 15);
             label5.TabIndex = 9;
             label5.Text = "Language:";
             // 
@@ -115,18 +119,20 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
-            comboBox2.Location = new Point(115, 41);
+            comboBox2.Location = new Point(101, 31);
+            comboBox2.Margin = new Padding(3, 2, 3, 2);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(214, 28);
+            comboBox2.Size = new Size(188, 23);
             comboBox2.TabIndex = 8;
             comboBox2.Text = "English";
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(115, 139);
+            radioButton1.Location = new Point(101, 104);
+            radioButton1.Margin = new Padding(3, 2, 3, 2);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(137, 24);
+            radioButton1.Size = new Size(110, 19);
             radioButton1.TabIndex = 7;
             radioButton1.TabStop = true;
             radioButton1.Text = "Age Restrictions";
@@ -135,9 +141,9 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(32, 89);
+            label4.Location = new Point(28, 67);
             label4.Name = "label4";
-            label4.Size = new Size(69, 20);
+            label4.Size = new Size(56, 15);
             label4.TabIndex = 6;
             label4.Text = "Location:";
             // 
@@ -145,29 +151,30 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Athens", "Patra", "Thessaloniki", "Kalamata", "Kifissia", "Glyfada", "Neos Voutzas", "Penteli", "Aigaleo" });
-            comboBox1.Location = new Point(115, 86);
+            comboBox1.Location = new Point(101, 64);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(214, 28);
+            comboBox1.Size = new Size(188, 23);
             comboBox1.TabIndex = 5;
             comboBox1.Text = "Athens";
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(22, 86);
+            label3.Location = new Point(19, 64);
             label3.Name = "label3";
-            label3.Size = new Size(0, 20);
+            label3.Size = new Size(0, 15);
             label3.TabIndex = 2;
             // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(5, 4);
+            tabControl1.Location = new Point(4, 3);
+            tabControl1.Margin = new Padding(3, 2, 3, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(672, 411);
+            tabControl1.Size = new Size(588, 299);
             tabControl1.TabIndex = 0;
             // 
             // tabPage2
@@ -181,90 +188,97 @@
             tabPage2.Controls.Add(textBox3);
             tabPage2.Controls.Add(textBox2);
             tabPage2.Controls.Add(textBox7);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Margin = new Padding(3, 2, 3, 2);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(664, 378);
+            tabPage2.Padding = new Padding(3, 2, 3, 2);
+            tabPage2.Size = new Size(580, 271);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "User";
             tabPage2.UseVisualStyleBackColor = true;
-            tabPage2.Click += tabPage2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(37, 252);
+            label1.Location = new Point(6, 189);
             label1.Name = "label1";
-            label1.Size = new Size(160, 20);
+            label1.Size = new Size(131, 15);
             label1.TabIndex = 22;
             label1.Text = "Change your Password:";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(37, 69);
+            textBox6.Location = new Point(6, 50);
+            textBox6.Margin = new Padding(3, 2, 3, 2);
             textBox6.Name = "textBox6";
             textBox6.PlaceholderText = "Surname";
-            textBox6.Size = new Size(250, 27);
+            textBox6.Size = new Size(219, 23);
             textBox6.TabIndex = 21;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(37, 36);
+            textBox4.Location = new Point(6, 25);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "Name";
-            textBox4.Size = new Size(250, 27);
+            textBox4.Size = new Size(219, 23);
             textBox4.TabIndex = 20;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 190);
+            label2.Location = new Point(6, 142);
             label2.Name = "label2";
-            label2.Size = new Size(67, 20);
+            label2.Size = new Size(54, 15);
             label2.TabIndex = 19;
             label2.Text = "Birthday:";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(37, 213);
+            dateTimePicker1.Location = new Point(6, 160);
+            dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(344, 27);
+            dateTimePicker1.Size = new Size(302, 23);
             dateTimePicker1.TabIndex = 18;
             dateTimePicker1.Value = new DateTime(2001, 6, 22, 0, 0, 0, 0);
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(37, 308);
+            textBox5.Location = new Point(6, 231);
+            textBox5.Margin = new Padding(3, 2, 3, 2);
             textBox5.Name = "textBox5";
             textBox5.PasswordChar = '*';
             textBox5.PlaceholderText = "*Re-enter Password";
-            textBox5.Size = new Size(344, 27);
+            textBox5.Size = new Size(302, 23);
             textBox5.TabIndex = 17;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(37, 275);
+            textBox3.Location = new Point(6, 206);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
             textBox3.PasswordChar = '*';
             textBox3.PlaceholderText = "*New Password";
-            textBox3.Size = new Size(344, 27);
+            textBox3.Size = new Size(302, 23);
             textBox3.TabIndex = 16;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(37, 160);
+            textBox2.Location = new Point(6, 115);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "*Email";
-            textBox2.Size = new Size(344, 27);
+            textBox2.Size = new Size(302, 23);
             textBox2.TabIndex = 15;
             textBox2.Text = "user@test.com";
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(37, 127);
+            textBox7.Location = new Point(6, 90);
+            textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
             textBox7.PlaceholderText = "*User Name";
-            textBox7.Size = new Size(250, 27);
+            textBox7.Size = new Size(219, 23);
             textBox7.TabIndex = 14;
             textBox7.Text = "User";
             // 
@@ -273,26 +287,29 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(9, 413);
+            button6.Location = new Point(8, 302);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(35, 37);
+            button6.Size = new Size(38, 36);
             button6.TabIndex = 4;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // Settings
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(682, 453);
+            ClientSize = new Size(598, 346);
             Controls.Add(button6);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(tabControl1);
             HelpButton = true;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
-            MaximumSize = new Size(700, 500);
-            MinimumSize = new Size(700, 500);
+            MaximumSize = new Size(614, 385);
+            MinimumSize = new Size(614, 385);
             Name = "Settings";
             Text = "Settings";
             tabPage1.ResumeLayout(false);

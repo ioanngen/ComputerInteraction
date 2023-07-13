@@ -37,5 +37,15 @@ namespace Shopping
 
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "To pay for your order you have fill in your Credit/Debit Card Details and Click on 'Pay Now'. " +
+                                    "You have to fill in all of the following fields(Card Number, Name on Card, Expiry Date, CVV)." +
+                                    "We accept MasterCard, Visa and America Express." +
+                                    "If you close the window the order will not take place. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

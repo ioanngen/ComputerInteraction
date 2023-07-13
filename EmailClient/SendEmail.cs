@@ -34,5 +34,17 @@ namespace EmailClient
                 Close();
             }
         }
+
+        private void viewHelpToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            const string message = "Here you can send an email, by typing the receiver email, subject and message." +
+                                    "By clicking the 'Account' you open the account settings." +
+                                    "To Send a new email go to File>New Mail, to open a daft email at the file system " +
+                                    "of your PC, go to File>Open Draft or if you want to save the current mail as a " +
+                                    "draft go to File>Save Draft. To print an email go to File>Print. At Edit on the " +
+                                    "menu bar, you can Undo, Redo, Cut, Copy and Paste.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

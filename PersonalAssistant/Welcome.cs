@@ -45,5 +45,13 @@ namespace PersonalAssistant
                 var result = MessageBox.Show(message, caption, MessageBoxButtons.OK);
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "This is a Log In Page to the Personal Assistant. If you already have an Account, please insert your " +
+                                    "credentials and click on 'Log In'. If you do not have an account click on 'Register' to create one. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

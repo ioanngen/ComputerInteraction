@@ -91,9 +91,10 @@
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Location = new Point(0, 610);
+            statusStrip1.Location = new Point(0, 452);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1081, 22);
+            statusStrip1.Padding = new Padding(1, 0, 12, 0);
+            statusStrip1.Size = new Size(946, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -103,7 +104,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, viewToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1081, 28);
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(946, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -111,33 +113,32 @@
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newMailToolStripMenuItem, openMailToolStripMenuItem, printToolStripMenuItem, exitToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(46, 24);
+            fileToolStripMenuItem.Size = new Size(37, 20);
             fileToolStripMenuItem.Text = "File";
             // 
             // newMailToolStripMenuItem
             // 
             newMailToolStripMenuItem.Name = "newMailToolStripMenuItem";
-            newMailToolStripMenuItem.Size = new Size(161, 26);
+            newMailToolStripMenuItem.Size = new Size(180, 22);
             newMailToolStripMenuItem.Text = "New Mail";
             newMailToolStripMenuItem.Click += newMailToolStripMenuItem_Click;
             // 
             // openMailToolStripMenuItem
             // 
             openMailToolStripMenuItem.Name = "openMailToolStripMenuItem";
-            openMailToolStripMenuItem.Size = new Size(161, 26);
+            openMailToolStripMenuItem.Size = new Size(180, 22);
             openMailToolStripMenuItem.Text = "Open Mail";
             // 
             // printToolStripMenuItem
             // 
             printToolStripMenuItem.Name = "printToolStripMenuItem";
-            printToolStripMenuItem.Size = new Size(161, 26);
+            printToolStripMenuItem.Size = new Size(180, 22);
             printToolStripMenuItem.Text = "Print";
-            printToolStripMenuItem.Click += printToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(161, 26);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -145,109 +146,112 @@
             // 
             editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { undoToolStripMenuItem, redoToolStripMenuItem, cutToolStripMenuItem, copyToolStripMenuItem, pasteToolStripMenuItem, deleteMailToolStripMenuItem, moveToBinToolStripMenuItem });
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(49, 24);
+            editToolStripMenuItem.Size = new Size(39, 20);
             editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
             // 
             undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            undoToolStripMenuItem.Size = new Size(172, 26);
+            undoToolStripMenuItem.Size = new Size(180, 22);
             undoToolStripMenuItem.Text = "Undo";
             // 
             // redoToolStripMenuItem
             // 
             redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            redoToolStripMenuItem.Size = new Size(172, 26);
+            redoToolStripMenuItem.Size = new Size(180, 22);
             redoToolStripMenuItem.Text = "Redo";
             // 
             // cutToolStripMenuItem
             // 
             cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            cutToolStripMenuItem.Size = new Size(172, 26);
+            cutToolStripMenuItem.Size = new Size(180, 22);
             cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
             // 
             copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            copyToolStripMenuItem.Size = new Size(172, 26);
+            copyToolStripMenuItem.Size = new Size(180, 22);
             copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
             // 
             pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            pasteToolStripMenuItem.Size = new Size(172, 26);
+            pasteToolStripMenuItem.Size = new Size(180, 22);
             pasteToolStripMenuItem.Text = "Paste";
             // 
             // deleteMailToolStripMenuItem
             // 
             deleteMailToolStripMenuItem.Name = "deleteMailToolStripMenuItem";
-            deleteMailToolStripMenuItem.Size = new Size(172, 26);
+            deleteMailToolStripMenuItem.Size = new Size(180, 22);
             deleteMailToolStripMenuItem.Text = "Delete Mail";
             // 
             // moveToBinToolStripMenuItem
             // 
             moveToBinToolStripMenuItem.Name = "moveToBinToolStripMenuItem";
-            moveToBinToolStripMenuItem.Size = new Size(172, 26);
+            moveToBinToolStripMenuItem.Size = new Size(180, 22);
             moveToBinToolStripMenuItem.Text = "Move to Bin";
             // 
             // viewToolStripMenuItem
             // 
             viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { accountPropertiesToolStripMenuItem, inNewWindowToolStripMenuItem });
             viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            viewToolStripMenuItem.Size = new Size(55, 24);
+            viewToolStripMenuItem.Size = new Size(44, 20);
             viewToolStripMenuItem.Text = "View";
             // 
             // accountPropertiesToolStripMenuItem
             // 
             accountPropertiesToolStripMenuItem.Name = "accountPropertiesToolStripMenuItem";
-            accountPropertiesToolStripMenuItem.Size = new Size(197, 26);
+            accountPropertiesToolStripMenuItem.Size = new Size(180, 22);
             accountPropertiesToolStripMenuItem.Text = "Account Details";
             accountPropertiesToolStripMenuItem.Click += accountPropertiesToolStripMenuItem_Click;
             // 
             // inNewWindowToolStripMenuItem
             // 
             inNewWindowToolStripMenuItem.Name = "inNewWindowToolStripMenuItem";
-            inNewWindowToolStripMenuItem.Size = new Size(197, 26);
+            inNewWindowToolStripMenuItem.Size = new Size(180, 22);
             inNewWindowToolStripMenuItem.Text = "In New Window";
             // 
             // helpToolStripMenuItem
             // 
             helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { viewHelpToolStripMenuItem });
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(55, 24);
+            helpToolStripMenuItem.Size = new Size(44, 20);
             helpToolStripMenuItem.Text = "Help";
             // 
             // viewHelpToolStripMenuItem
             // 
             viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            viewHelpToolStripMenuItem.Size = new Size(160, 26);
+            viewHelpToolStripMenuItem.Size = new Size(180, 22);
             viewHelpToolStripMenuItem.Text = "View Help";
+            viewHelpToolStripMenuItem.Click += viewHelpToolStripMenuItem_Click;
             // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 3;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 38.0281677F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 61.9718323F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 584F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 512F));
             tableLayoutPanel1.Controls.Add(button1, 0, 0);
             tableLayoutPanel1.Controls.Add(treeView1, 0, 1);
             tableLayoutPanel1.Controls.Add(toolStrip1, 1, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 2, 1);
             tableLayoutPanel1.Controls.Add(dataGridView1, 1, 1);
-            tableLayoutPanel1.Location = new Point(0, 27);
+            tableLayoutPanel1.Location = new Point(0, 20);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(1069, 580);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            tableLayoutPanel1.Size = new Size(946, 435);
             tableLayoutPanel1.TabIndex = 3;
             // 
             // button1
             // 
-            button1.Location = new Point(3, 3);
+            button1.Location = new Point(3, 2);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(178, 29);
+            button1.Size = new Size(154, 30);
             button1.TabIndex = 0;
             button1.Text = "New Mail";
             toolTip1.SetToolTip(button1, "Create New Mail");
@@ -256,7 +260,8 @@
             // 
             // treeView1
             // 
-            treeView1.Location = new Point(3, 38);
+            treeView1.Location = new Point(3, 36);
+            treeView1.Margin = new Padding(3, 2, 3, 2);
             treeView1.Name = "treeView1";
             treeNode1.Name = "Node1";
             treeNode1.Text = "Inbox";
@@ -281,15 +286,15 @@
             treeNode11.Name = "Node0";
             treeNode11.Text = "Account";
             treeView1.Nodes.AddRange(new TreeNode[] { treeNode11 });
-            treeView1.Size = new Size(178, 539);
+            treeView1.Size = new Size(154, 397);
             treeView1.TabIndex = 1;
             // 
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Location = new Point(184, 0);
+            toolStrip1.Location = new Point(165, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(300, 25);
+            toolStrip1.Size = new Size(268, 25);
             toolStrip1.TabIndex = 3;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -308,15 +313,16 @@
             tableLayoutPanel2.Controls.Add(textBox4, 1, 3);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 1, 4);
             tableLayoutPanel2.Controls.Add(button6, 0, 4);
-            tableLayoutPanel2.Location = new Point(487, 38);
+            tableLayoutPanel2.Location = new Point(436, 36);
+            tableLayoutPanel2.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 5;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 376F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 16F));
-            tableLayoutPanel2.Size = new Size(579, 539);
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 266F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
+            tableLayoutPanel2.Size = new Size(507, 397);
             tableLayoutPanel2.TabIndex = 2;
             // 
             // label1
@@ -324,69 +330,73 @@
             label1.AutoSize = true;
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(46, 20);
+            label1.Size = new Size(38, 15);
             label1.TabIndex = 0;
             label1.Text = "From:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(3, 40);
+            label2.Location = new Point(3, 30);
             label2.Name = "label2";
-            label2.Size = new Size(28, 20);
+            label2.Size = new Size(24, 15);
             label2.TabIndex = 1;
             label2.Text = "Cc:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(3, 80);
+            label3.Location = new Point(3, 60);
             label3.Name = "label3";
-            label3.Size = new Size(61, 20);
+            label3.Size = new Size(49, 15);
             label3.TabIndex = 2;
             label3.Text = "Subject:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(3, 120);
+            label4.Location = new Point(3, 90);
             label4.Name = "label4";
-            label4.Size = new Size(70, 20);
+            label4.Size = new Size(56, 15);
             label4.TabIndex = 3;
             label4.Text = "Message:";
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(101, 3);
+            textBox1.Location = new Point(89, 2);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(475, 27);
+            textBox1.Size = new Size(415, 23);
             textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Location = new Point(101, 43);
+            textBox2.Location = new Point(89, 32);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(475, 27);
+            textBox2.Size = new Size(415, 23);
             textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
             textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox3.Location = new Point(101, 83);
+            textBox3.Location = new Point(89, 62);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(475, 27);
+            textBox3.Size = new Size(415, 23);
             textBox3.TabIndex = 6;
             // 
             // textBox4
             // 
             textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox4.Location = new Point(101, 123);
+            textBox4.Location = new Point(89, 92);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.ScrollBars = ScrollBars.Vertical;
-            textBox4.Size = new Size(475, 370);
+            textBox4.Size = new Size(415, 262);
             textBox4.TabIndex = 7;
             // 
             // tableLayoutPanel3
@@ -397,18 +407,20 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.899395F));
             tableLayoutPanel3.Controls.Add(button3, 1, 0);
             tableLayoutPanel3.Controls.Add(button2, 0, 0);
-            tableLayoutPanel3.Location = new Point(101, 499);
+            tableLayoutPanel3.Location = new Point(89, 358);
+            tableLayoutPanel3.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(475, 37);
+            tableLayoutPanel3.Size = new Size(415, 37);
             tableLayoutPanel3.TabIndex = 8;
             // 
             // button3
             // 
-            button3.Location = new Point(240, 3);
+            button3.Location = new Point(210, 2);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(82, 26);
             button3.TabIndex = 1;
             button3.Text = "Forward";
             toolTip1.SetToolTip(button3, "Forward This Mail");
@@ -418,9 +430,10 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.Location = new Point(140, 3);
+            button2.Location = new Point(122, 2);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(82, 26);
             button2.TabIndex = 0;
             button2.Text = "Reply";
             toolTip1.SetToolTip(button2, "Reply To This Mail");
@@ -432,38 +445,41 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(3, 499);
+            button6.Location = new Point(3, 358);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(35, 37);
+            button6.Size = new Size(38, 37);
             button6.TabIndex = 9;
             toolTip1.SetToolTip(button6, "Help");
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(187, 38);
+            dataGridView1.Location = new Point(168, 36);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(294, 539);
+            dataGridView1.Size = new Size(256, 397);
             dataGridView1.TabIndex = 4;
             // 
             // notifyIcon1
             // 
             notifyIcon1.Text = "notifyIcon1";
             notifyIcon1.Visible = true;
-            notifyIcon1.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
             // 
             // WebMail
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1081, 632);
+            ClientSize = new Size(946, 474);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "WebMail";
             Text = "WebMail";
             menuStrip1.ResumeLayout(false);

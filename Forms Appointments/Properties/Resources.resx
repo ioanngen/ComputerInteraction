@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--
+  <!-- 
     Microsoft ResX Schema 
-
+    
     Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
     associated with the data types.
-
+    
     Example:
-
+    
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-
-    There are any number of "resheader" rows that contain simple
+                
+    There are any number of "resheader" rows that contain simple 
     name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
     mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
-
+    
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
+    value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAQYAAAEGAc3TM7wAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAACnElEQVRYR8WXv2sVQRDH5/Y0ia2VsQmIxEoQAhZ26SIhYJPaUgRB0qXXUrE0ILZiIQS7gKC+Lv+A
-        BlIlvhQRgsVLXiL44/zOvt1zd27ubl9CuIVPeJn5zsze/ryjoiiSQJskyu8aMmsZ5b2MzDY4dOB33mMf
-        a1ir5dBQjSFo00j8EkUGoEhkwDEcq+UMUY0M2hSSPEWyoUg+DkPOwbm0GoxuJLqCId1UEp6SfJNzqrUq
-        BqKbCOpXk5yZPueu1Iv+sU9+LsU93IloJMLiU2MO+zH0nzPK3uH3N+FrwE5HuSbKDrgFpwTEQPcGCe6A
-        CR9rExFdJTKr0PyRMRKuVca54Gk4Wlc7Ap9Bm/lgDZwDS9AeyVjBkGtaPf9BYt7nmrAEmrW4EN2G7QXA
-        iOSL+N/895kVLUcI13R5aBKG1kMGurmg+Bxsf2N/fi/wXwt9NQygw+mKo1NxSvZ8cgYL70NVk63HGrNb
-        1cTYY5uHVnMKfqOnNzgx0YUFxc9D+sQXR7sE2y+pkXBt9NReLKpA8HO07cyJsINsA0XLCwhPtlzVaOQ9
-        Hiq+1RRnGniKt6h4MXj6GdgPpK6Gbe4AX6easxUUf42CweqnWdh3pK6Bw7N04CsKBsNOt2D7LjRt2A6c
-        agrw4I+C4tdh+yE1CfAUJC/CCOyGed8BTMUrTdMOFiFvBd3ZDEbggXt6XGJmX/pTsNsw8SDSOECC59iC
-        HxVfEvYgQks6imv4AlK3nGR0FLs5bL2MJJiCx24K8ADZJ03TBNe08S5J0nUcgpjLHDuKNw81TQPxdcyg
-        R0kvJB7M330fixF4r2nq4Fo+tuwA2rivZHjzsbfilrC3UPNK5jrR3Utpaejytbw02pHo6MPEg9bdp1kI
-        WjcfpxK0c/g8L+gf+GFTQvKL0OgAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

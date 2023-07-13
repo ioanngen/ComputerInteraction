@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmailAccount));
             groupBox1 = new GroupBox();
+            button6 = new Button();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -41,7 +42,6 @@
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
-            button6 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,6 +65,17 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Account Details";
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(6, 486);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 11;
+            button6.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -159,17 +170,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(310, 27);
             textBox1.TabIndex = 0;
-            // 
-            // button6
-            // 
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(6, 486);
-            button6.Name = "button6";
-            button6.Size = new Size(35, 37);
-            button6.TabIndex = 11;
-            button6.UseVisualStyleBackColor = true;
             // 
             // EmailAccount
             // 

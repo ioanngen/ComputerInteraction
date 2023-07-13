@@ -34,7 +34,7 @@ namespace Shopping
                 var result = MessageBox.Show(message, caption,
                                              MessageBoxButtons.OK);
             }
-            
+
 
         }
     }

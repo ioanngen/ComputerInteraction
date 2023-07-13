@@ -33,6 +33,8 @@
             button2 = new Button();
             button3 = new Button();
             tabPage1 = new TabPage();
+            label5 = new Label();
+            comboBox2 = new ComboBox();
             radioButton1 = new RadioButton();
             label4 = new Label();
             comboBox1 = new ComboBox();
@@ -49,8 +51,6 @@
             textBox2 = new TextBox();
             textBox7 = new TextBox();
             button6 = new Button();
-            label5 = new Label();
-            comboBox2 = new ComboBox();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -101,6 +101,25 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "General";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(32, 44);
+            label5.Name = "label5";
+            label5.Size = new Size(77, 20);
+            label5.TabIndex = 9;
+            label5.Text = "Language:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
+            comboBox2.Location = new Point(115, 41);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(214, 28);
+            comboBox2.TabIndex = 8;
+            comboBox2.Text = "English";
             // 
             // radioButton1
             // 
@@ -259,25 +278,6 @@
             button6.Size = new Size(35, 37);
             button6.TabIndex = 4;
             button6.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(32, 44);
-            label5.Name = "label5";
-            label5.Size = new Size(77, 20);
-            label5.TabIndex = 9;
-            label5.Text = "Language:";
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
-            comboBox2.Location = new Point(115, 41);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(214, 28);
-            comboBox2.TabIndex = 8;
-            comboBox2.Text = "English";
             // 
             // Settings
             // 

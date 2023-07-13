@@ -77,10 +77,10 @@
             tableLayoutPanel3 = new TableLayoutPanel();
             button3 = new Button();
             button2 = new Button();
+            button6 = new Button();
             dataGridView1 = new DataGridView();
             notifyIcon1 = new NotifyIcon(components);
             toolTip1 = new ToolTip(components);
-            button6 = new Button();
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -427,6 +427,18 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(3, 499);
+            button6.Name = "button6";
+            button6.Size = new Size(35, 37);
+            button6.TabIndex = 9;
+            toolTip1.SetToolTip(button6, "Help");
+            button6.UseVisualStyleBackColor = true;
+            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -442,18 +454,6 @@
             notifyIcon1.Text = "notifyIcon1";
             notifyIcon1.Visible = true;
             notifyIcon1.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
-            // 
-            // button6
-            // 
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(3, 499);
-            button6.Name = "button6";
-            button6.Size = new Size(35, 37);
-            button6.TabIndex = 9;
-            toolTip1.SetToolTip(button6, "Help");
-            button6.UseVisualStyleBackColor = true;
             // 
             // WebMail
             // 

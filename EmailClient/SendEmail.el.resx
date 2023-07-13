@@ -143,9 +143,6 @@
   <data name="goBackToolStripMenuItem.Text" xml:space="preserve">
     <value>Go Back</value>
   </data>
-  <data name="viewHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>843, 28</value>
   </data>

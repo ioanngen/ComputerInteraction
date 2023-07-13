@@ -7,6 +7,7 @@ using Contacts;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
+using Maps;
 
 namespace PersonalAssistant
 {
@@ -91,6 +92,12 @@ namespace PersonalAssistant
             {
                 pbNews.Image = Image.FromFile(NewsImages[newsIndex]);
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var newform = new MapsForm();
+            newform.Show();
         }
     }
 }

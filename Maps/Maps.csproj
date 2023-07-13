@@ -9,19 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Contacts\Contacts.csproj" />
-    <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
-    <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
-    <ProjectReference Include="..\Maps\Maps.csproj" />
-    <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
-    <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
-    <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
-    <ProjectReference Include="..\MusicPlayer\MusicPlayer.csproj" />
-    <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
-    <ProjectReference Include="..\Shopping\Shopping.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

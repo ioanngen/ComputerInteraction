@@ -6,6 +6,7 @@ using MusicPlayer;
 using Contacts;
 using Smart_Home;
 using CallsAndMessages;
+using Reminders;
 
 namespace PersonalAssistant
 {
@@ -75,6 +76,12 @@ namespace PersonalAssistant
         private void button1_Click(object sender, EventArgs e)
         {
             var newform = new CallsAndMessagesForm();
+            newform.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            var newform = new RemindersForm();
             newform.Show();
         }
     }

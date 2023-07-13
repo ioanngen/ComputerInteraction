@@ -201,6 +201,7 @@
             button14.TabIndex = 14;
             button14.Text = "Reminders";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // MainMenu
             // 

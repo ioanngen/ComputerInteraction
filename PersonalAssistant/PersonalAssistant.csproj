@@ -13,6 +13,7 @@
     <ProjectReference Include="..\Contacts\Contacts.csproj" />
     <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
     <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
+    <ProjectReference Include="..\Reminders\Reminders.csproj" />
     <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
     <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
     <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />

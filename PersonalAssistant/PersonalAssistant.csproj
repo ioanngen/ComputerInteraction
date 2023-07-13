@@ -9,15 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CallsAndMessages\CallsAndMessages.csproj" />
     <ProjectReference Include="..\Contacts\Contacts.csproj" />
     <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
     <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
+    <ProjectReference Include="..\Reminders\Reminders.csproj" />
     <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
     <ProjectReference Include="..\EmailClient\EmailClient.csproj" />
     <ProjectReference Include="..\Forms Appointments\Forms Appointments.csproj" />
     <ProjectReference Include="..\MusicPlayer\MusicPlayer.csproj" />
     <ProjectReference Include="..\SettingsForm\SettingsForm.csproj" />
     <ProjectReference Include="..\Shopping\Shopping.csproj" />
+    <ProjectReference Include="..\Smart_Home\Smart_Home.csproj" />
   </ItemGroup>
 
   <ItemGroup>

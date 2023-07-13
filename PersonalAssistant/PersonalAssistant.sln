@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forms Appointments", "..\Fo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SettingsForm", "..\SettingsForm\SettingsForm.csproj", "{56577282-63FA-48DA-A49F-C451F4DC2679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts", "..\Contacts\Contacts.csproj", "{CA344686-5569-4FDF-8853-9AE56EF27925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts", "..\Contacts\Contacts.csproj", "{CA344686-5569-4FDF-8853-9AE56EF27925}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart_Home", "..\Smart_Home\Smart_Home.csproj", "{922B5FD3-9EEE-4E1A-AFD3-09D8D76F56EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallsAndMessages", "..\CallsAndMessages\CallsAndMessages.csproj", "{B8CF1011-064B-44BD-8886-8D18620A87E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminders", "..\Reminders\Reminders.csproj", "{704E2022-9820-451A-A821-1C980509160A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{CA344686-5569-4FDF-8853-9AE56EF27925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA344686-5569-4FDF-8853-9AE56EF27925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA344686-5569-4FDF-8853-9AE56EF27925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922B5FD3-9EEE-4E1A-AFD3-09D8D76F56EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922B5FD3-9EEE-4E1A-AFD3-09D8D76F56EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922B5FD3-9EEE-4E1A-AFD3-09D8D76F56EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922B5FD3-9EEE-4E1A-AFD3-09D8D76F56EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CF1011-064B-44BD-8886-8D18620A87E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CF1011-064B-44BD-8886-8D18620A87E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CF1011-064B-44BD-8886-8D18620A87E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CF1011-064B-44BD-8886-8D18620A87E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704E2022-9820-451A-A821-1C980509160A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704E2022-9820-451A-A821-1C980509160A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704E2022-9820-451A-A821-1C980509160A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704E2022-9820-451A-A821-1C980509160A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

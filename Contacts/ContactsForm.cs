@@ -21,5 +21,21 @@ namespace Contacts
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var newform = new AddContact();
+            newform.Show();
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void ContactsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

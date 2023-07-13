@@ -29,189 +29,207 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            textBox1 = new TextBox();
+            button9 = new Button();
+            button10 = new Button();
+            button11 = new Button();
+            button12 = new Button();
+            button13 = new Button();
+            button14 = new Button();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 70);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(10, 34);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(62, 52);
+            button1.TabIndex = 0;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(115, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 50);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Contacts";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Location = new Point(101, 41);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(105, 38);
+            button2.TabIndex = 1;
+            button2.Text = "Contacts";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(651, 45);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(212, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Weather and Traffic";
-            this.button3.UseVisualStyleBackColor = true;
+            button3.Location = new Point(570, 34);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(186, 22);
+            button3.TabIndex = 2;
+            button3.Text = "Weather and Traffic";
+            button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(23, 409);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(212, 29);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Smart Home";
-            this.button4.UseVisualStyleBackColor = true;
+            button4.Location = new Point(20, 307);
+            button4.Margin = new Padding(3, 2, 3, 2);
+            button4.Name = "button4";
+            button4.Size = new Size(186, 22);
+            button4.TabIndex = 3;
+            button4.Text = "Smart Home";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(790, 421);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(73, 71);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.Location = new Point(691, 316);
+            button5.Margin = new Padding(0);
+            button5.Name = "button5";
+            button5.Size = new Size(64, 53);
+            button5.TabIndex = 4;
+            button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(141, 308);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 29);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Navigation";
-            this.button6.UseVisualStyleBackColor = true;
+            button6.Location = new Point(123, 231);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(82, 22);
+            button6.TabIndex = 5;
+            button6.Text = "Navigation";
+            button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(125, 209);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(94, 29);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Projects";
-            this.button7.UseVisualStyleBackColor = true;
+            button7.Location = new Point(109, 157);
+            button7.Margin = new Padding(3, 2, 3, 2);
+            button7.Name = "button7";
+            button7.Size = new Size(82, 22);
+            button7.TabIndex = 6;
+            button7.Text = "Projects";
+            button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(125, 157);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(94, 29);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Emails";
-            this.button8.UseVisualStyleBackColor = true;
+            button8.Location = new Point(109, 118);
+            button8.Margin = new Padding(3, 2, 3, 2);
+            button8.Name = "button8";
+            button8.Size = new Size(82, 22);
+            button8.TabIndex = 7;
+            button8.Text = "Emails";
+            button8.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 367);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Search the Internet";
-            this.textBox1.Size = new System.Drawing.Size(94, 27);
-            this.textBox1.TabIndex = 8;
+            textBox1.Location = new Point(10, 275);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Search the Internet";
+            textBox1.Size = new Size(83, 23);
+            textBox1.TabIndex = 8;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(125, 365);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(122, 29);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Search";
-            this.button9.UseVisualStyleBackColor = true;
+            button9.Location = new Point(109, 274);
+            button9.Margin = new Padding(3, 2, 3, 2);
+            button9.Name = "button9";
+            button9.Size = new Size(107, 22);
+            button9.TabIndex = 9;
+            button9.Text = "Search";
+            button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(125, 261);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(94, 29);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Music";
-            this.button10.UseVisualStyleBackColor = true;
+            button10.Location = new Point(109, 196);
+            button10.Margin = new Padding(3, 2, 3, 2);
+            button10.Name = "button10";
+            button10.Size = new Size(82, 22);
+            button10.TabIndex = 10;
+            button10.Text = "Music";
+            button10.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(12, 308);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(122, 29);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "Shop Online";
-            this.button11.UseVisualStyleBackColor = true;
+            button11.Location = new Point(10, 231);
+            button11.Margin = new Padding(3, 2, 3, 2);
+            button11.Name = "button11";
+            button11.Size = new Size(107, 22);
+            button11.TabIndex = 11;
+            button11.Text = "Shop Online";
+            button11.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(12, 157);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(94, 29);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "My Events";
-            this.button12.UseVisualStyleBackColor = true;
+            button12.Location = new Point(10, 118);
+            button12.Margin = new Padding(3, 2, 3, 2);
+            button12.Name = "button12";
+            button12.Size = new Size(82, 22);
+            button12.TabIndex = 12;
+            button12.Text = "My Events";
+            button12.UseVisualStyleBackColor = true;
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(337, 382);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(322, 68);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "News";
-            this.button13.UseVisualStyleBackColor = true;
+            button13.Location = new Point(295, 286);
+            button13.Margin = new Padding(3, 2, 3, 2);
+            button13.Name = "button13";
+            button13.Size = new Size(282, 51);
+            button13.TabIndex = 13;
+            button13.Text = "News";
+            button13.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(12, 209);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(94, 29);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "Reminders";
-            this.button14.UseVisualStyleBackColor = true;
+            button14.Location = new Point(10, 157);
+            button14.Margin = new Padding(3, 2, 3, 2);
+            button14.Name = "button14";
+            button14.Size = new Size(82, 22);
+            button14.TabIndex = 14;
+            button14.Text = "Reminders";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(889, 501);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MainMenu";
-            this.Text = "Personal Assisant";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(778, 376);
+            Controls.Add(button14);
+            Controls.Add(button13);
+            Controls.Add(button12);
+            Controls.Add(button11);
+            Controls.Add(button10);
+            Controls.Add(button9);
+            Controls.Add(textBox1);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "MainMenu";
+            Text = "Personal Assisant";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

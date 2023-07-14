@@ -102,5 +102,14 @@ namespace Maps
             directionsIndex = 1;
             mapsIndex = 1;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "Here you can insert a Destination in the field below, and click Search." +
+                "In the upword field and map, you will be able to see the instrations you need to follow to arrive at" +
+                "your destiantion. You can click on Next to see every time the new instruction. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

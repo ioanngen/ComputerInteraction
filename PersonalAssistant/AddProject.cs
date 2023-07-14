@@ -50,5 +50,12 @@ namespace PersonalAssistant
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "If you want to add a new project, you have to type the Project Name and Description in the right fields," +
+                "and also choose a deadline from the calendar at the right of screen. To save the Project click on Save button.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

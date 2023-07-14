@@ -41,5 +41,13 @@ namespace PersonalAssistant
                 this.Dispose();
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "Here you can see a list of all your existing projects in your Personal Assistant." +
+                "To exit click on the button below at the center of the window.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

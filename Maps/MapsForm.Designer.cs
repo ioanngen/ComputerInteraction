@@ -98,6 +98,7 @@
             LocationTextArea.Margin = new Padding(3, 2, 3, 2);
             LocationTextArea.Multiline = true;
             LocationTextArea.Name = "LocationTextArea";
+            LocationTextArea.PlaceholderText = "Destination";
             LocationTextArea.Size = new Size(370, 36);
             LocationTextArea.TabIndex = 5;
             toolTip1.SetToolTip(LocationTextArea, "Type here your Destination");
@@ -113,6 +114,7 @@
             button6.Size = new Size(42, 41);
             button6.TabIndex = 7;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // MapsForm
             // 

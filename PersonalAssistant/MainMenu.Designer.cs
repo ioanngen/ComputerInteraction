@@ -373,6 +373,7 @@
             button3.Size = new Size(42, 41);
             button3.TabIndex = 25;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // MainMenu
             // 

@@ -33,5 +33,13 @@ namespace PersonalAssistant
             var newform = new ViewSavedProjects();
             newform.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "In this window you can choose if you want to create a new Project or " +
+                "to see a list of all your existing projects.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

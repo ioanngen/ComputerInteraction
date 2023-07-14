@@ -121,5 +121,16 @@ namespace PersonalAssistant
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            const string message = "This is the Main Menu, from here you can navigate to all functions of the Personal Assistant." +
+                                    "In the left you can access Phone and Messages, Contacts, Events, Emails, Reminders, Alarms, Projects," +
+                                    "Music Player, Shopping List, Maps and Smart Home. In the middle you can search the internet for any " +
+                                    "information by typing at the searching bar and clicking the search button. Below you can navigate throw " +
+                                    "the latest news. At the right the weather and traffic information appearse and below you can go to Settings. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -535,7 +535,7 @@
             picDecTemp.SizeMode = PictureBoxSizeMode.StretchImage;
             picDecTemp.TabIndex = 48;
             picDecTemp.TabStop = false;
-            toolTip1.SetToolTip(picDecTemp, "Decreae Temperature");
+            toolTip1.SetToolTip(picDecTemp, "Decrease Temperature");
             picDecTemp.Click += picDecTemp_Click;
             // 
             // button14

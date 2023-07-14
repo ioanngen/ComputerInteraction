@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactsForm));
             newContactsTip = new ToolTip(components);
             btnAdd = new Button();
             btnEdit = new Button();
@@ -38,6 +39,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label1 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // btnAdd
@@ -49,6 +51,7 @@
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 79);
             btnAdd.TabIndex = 0;
+            newContactsTip.SetToolTip(btnAdd, "Add Contact");
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
             // 
@@ -61,6 +64,7 @@
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(75, 79);
             btnEdit.TabIndex = 1;
+            newContactsTip.SetToolTip(btnEdit, "Edit Contact");
             btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnDelete
@@ -72,6 +76,7 @@
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 79);
             btnDelete.TabIndex = 2;
+            newContactsTip.SetToolTip(btnDelete, "Delete Selected Contact");
             btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnSearch
@@ -110,11 +115,24 @@
             label1.TabIndex = 6;
             label1.Text = "Contacts List:";
             // 
+            // button3
+            // 
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(308, 373);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(42, 41);
+            button3.TabIndex = 26;
+            button3.UseVisualStyleBackColor = true;
+            // 
             // ContactsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(362, 426);
+            Controls.Add(button3);
             Controls.Add(label1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -142,5 +160,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label1;
+        private Button button3;
     }
 }

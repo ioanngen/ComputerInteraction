@@ -50,13 +50,13 @@ namespace Maps
         private void NextPoint_Click(object sender, EventArgs e)
         {
             bool changeMap = false;
-            
-            if (directionsIndex<8) 
+
+            if (directionsIndex < 8)
             {
                 DirectionsBox.Image = Image.FromFile(DirectionImages[directionsIndex]);
                 directionsIndex++;
             }
-            if (directionsIndex%2==0)
+            if (directionsIndex % 2 == 0)
             {
                 changeMap = true;
             }
@@ -66,7 +66,7 @@ namespace Maps
                 CanChangeLocation = true;
                 Navigate.Enabled = true;
             }
-            else if(mapsIndex <= 4 && changeMap)
+            else if (mapsIndex <= 4 && changeMap)
             {
                 MapBox.Image = Image.FromFile(MapImages[mapsIndex]);
                 mapsIndex++;
@@ -80,7 +80,7 @@ namespace Maps
             {
                 MessageBox.Show("Please enter a valid location", "Location Error");
             }
-            if (LocationTextArea.Text!= "" && init)
+            if (LocationTextArea.Text != "" && init)
             {
                 InitializePictureBoxes();
                 Navigate.Enabled = false;

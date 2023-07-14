@@ -266,6 +266,7 @@
             Controls.Add(tableLayoutPanel1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             HelpButton = true;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;

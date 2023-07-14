@@ -168,6 +168,7 @@
             Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "MusicPlayerWin";
             Text = "MusicPlayer";
             panel1.ResumeLayout(false);

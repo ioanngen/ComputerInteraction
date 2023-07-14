@@ -305,6 +305,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(tabControl1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             HelpButton = true;
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;

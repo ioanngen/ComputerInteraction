@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CallsForm));
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -42,6 +44,8 @@
             pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
+            toolTip1 = new ToolTip(components);
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -59,12 +63,13 @@
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             textBox1.Location = new Point(12, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(204, 26);
+            textBox1.PlaceholderText = "Number";
+            textBox1.Size = new Size(204, 23);
             textBox1.TabIndex = 0;
-            textBox1.Text = "Number";
+            toolTip1.SetToolTip(textBox1, "Dial the number you want call");
             // 
             // pictureBox1
             // 
@@ -179,16 +184,30 @@
             pictureBox13.Image = Properties.Resources.telephone_call2;
             pictureBox13.Location = new Point(82, 324);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(64, 64);
+            pictureBox13.Size = new Size(64, 71);
             pictureBox13.TabIndex = 13;
             pictureBox13.TabStop = false;
+            toolTip1.SetToolTip(pictureBox13, "Make Call");
             pictureBox13.Click += pictureBox13_Click_1;
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(177, 344);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 14;
+            button6.UseVisualStyleBackColor = true;
             // 
             // CallsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(231, 396);
+            Controls.Add(button6);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox11);
@@ -203,6 +222,8 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "CallsForm";
             Text = "Calls";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -238,5 +259,7 @@
         private PictureBox pictureBox11;
         private PictureBox pictureBox12;
         private PictureBox pictureBox13;
+        private ToolTip toolTip1;
+        private Button button6;
     }
 }

@@ -29,24 +29,24 @@ namespace PersonalAssistant
         private void SaveProject_Click(object sender, EventArgs e)
         {
             bool cantSave = false;
-            if (ProjectName.Text=="")
+            if (ProjectName.Text == "")
             {
-                MessageBox.Show("Please enter a valid project name.","Name error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                cantSave=true;
+                MessageBox.Show("Please enter a valid project name.", "Name error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cantSave = true;
             }
-            if (ProjectDesc.Text=="")
+            if (ProjectDesc.Text == "")
             {
                 MessageBox.Show("Please enter a valid project description.", "Description error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                cantSave=true;
+                cantSave = true;
             }
-            if (!cantSave) 
+            if (!cantSave)
             {
                 DialogResult result = MessageBox.Show("Project saved successfully, do you wish to add more projects?.", "Success!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if (result==DialogResult.No)
+                if (result == DialogResult.No)
                 {
                     this.Dispose();
                 }
-                
+
             }
         }
 

@@ -28,79 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectManagerMenuForm));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.AddNewProject = new System.Windows.Forms.Button();
-            this.ViewSavedProjects = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            AddNewProject = new Button();
+            ViewSavedProjects = new Button();
+            toolTip1 = new ToolTip(components);
+            button6 = new Button();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(40, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(129, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Add a new project";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox1.BackColor = SystemColors.Window;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Enabled = false;
+            textBox1.Location = new Point(35, 28);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(113, 16);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Add a new project";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(223, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(157, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "View saved projects";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox2.BackColor = SystemColors.Window;
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Enabled = false;
+            textBox2.Location = new Point(195, 28);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(137, 16);
+            textBox2.TabIndex = 1;
+            textBox2.Text = "View saved projects";
+            textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // AddNewProject
             // 
-            this.AddNewProject.FlatAppearance.BorderSize = 0;
-            this.AddNewProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddNewProject.Image = ((System.Drawing.Image)(resources.GetObject("AddNewProject.Image")));
-            this.AddNewProject.Location = new System.Drawing.Point(80, 78);
-            this.AddNewProject.Name = "AddNewProject";
-            this.AddNewProject.Size = new System.Drawing.Size(58, 57);
-            this.AddNewProject.TabIndex = 2;
-            this.AddNewProject.UseVisualStyleBackColor = true;
-            this.AddNewProject.Click += new System.EventHandler(this.AddNewProject_Click);
+            AddNewProject.FlatAppearance.BorderSize = 0;
+            AddNewProject.FlatStyle = FlatStyle.Flat;
+            AddNewProject.Image = (Image)resources.GetObject("AddNewProject.Image");
+            AddNewProject.Location = new Point(65, 55);
+            AddNewProject.Margin = new Padding(3, 2, 3, 2);
+            AddNewProject.Name = "AddNewProject";
+            AddNewProject.Size = new Size(57, 60);
+            AddNewProject.TabIndex = 2;
+            toolTip1.SetToolTip(AddNewProject, "Add a new project");
+            AddNewProject.UseVisualStyleBackColor = true;
+            AddNewProject.Click += AddNewProject_Click;
             // 
             // ViewSavedProjects
             // 
-            this.ViewSavedProjects.FlatAppearance.BorderSize = 0;
-            this.ViewSavedProjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewSavedProjects.Image = ((System.Drawing.Image)(resources.GetObject("ViewSavedProjects.Image")));
-            this.ViewSavedProjects.Location = new System.Drawing.Point(265, 73);
-            this.ViewSavedProjects.Name = "ViewSavedProjects";
-            this.ViewSavedProjects.Size = new System.Drawing.Size(72, 66);
-            this.ViewSavedProjects.TabIndex = 3;
-            this.ViewSavedProjects.UseVisualStyleBackColor = true;
-            this.ViewSavedProjects.Click += new System.EventHandler(this.ViewSavedProjects_Click);
+            ViewSavedProjects.FlatAppearance.BorderSize = 0;
+            ViewSavedProjects.FlatStyle = FlatStyle.Flat;
+            ViewSavedProjects.Image = (Image)resources.GetObject("ViewSavedProjects.Image");
+            ViewSavedProjects.Location = new Point(235, 49);
+            ViewSavedProjects.Margin = new Padding(3, 2, 3, 2);
+            ViewSavedProjects.Name = "ViewSavedProjects";
+            ViewSavedProjects.Size = new Size(72, 73);
+            ViewSavedProjects.TabIndex = 3;
+            toolTip1.SetToolTip(ViewSavedProjects, "View saved projects");
+            ViewSavedProjects.UseVisualStyleBackColor = true;
+            ViewSavedProjects.Click += ViewSavedProjects_Click;
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(160, 98);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 7;
+            button6.UseVisualStyleBackColor = true;
             // 
             // ProjectManagerMenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 185);
-            this.Controls.Add(this.ViewSavedProjects);
-            this.Controls.Add(this.AddNewProject);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "ProjectManagerMenuForm";
-            this.Text = "ProjectManagerMenuForm";
-            this.Load += new System.EventHandler(this.ProjectManagerMenuForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(360, 150);
+            Controls.Add(button6);
+            Controls.Add(ViewSavedProjects);
+            Controls.Add(AddNewProject);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            Name = "ProjectManagerMenuForm";
+            Text = "ProjectManagerMenuForm";
+            Load += ProjectManagerMenuForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -109,5 +132,7 @@
         private TextBox textBox2;
         private Button AddNewProject;
         private Button ViewSavedProjects;
+        private ToolTip toolTip1;
+        private Button button6;
     }
 }

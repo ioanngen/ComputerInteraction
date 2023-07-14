@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessagesForm));
             NumberLabel = new Label();
             numberTextBox = new TextBox();
             label1 = new Label();
@@ -36,25 +37,25 @@
             buttonSend = new Button();
             buttonCancel = new Button();
             toolTip1 = new ToolTip(components);
+            button6 = new Button();
             SuspendLayout();
             // 
             // NumberLabel
             // 
             NumberLabel.AutoSize = true;
             NumberLabel.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            NumberLabel.Location = new Point(14, 12);
+            NumberLabel.Location = new Point(12, 9);
             NumberLabel.Name = "NumberLabel";
-            NumberLabel.Size = new Size(95, 23);
+            NumberLabel.Size = new Size(76, 18);
             NumberLabel.TabIndex = 0;
             NumberLabel.Text = "Number:";
             // 
             // numberTextBox
             // 
-            numberTextBox.Location = new Point(14, 40);
-            numberTextBox.Margin = new Padding(3, 4, 3, 4);
+            numberTextBox.Location = new Point(12, 30);
             numberTextBox.Name = "numberTextBox";
             numberTextBox.PlaceholderText = "ex. 1234567890";
-            numberTextBox.Size = new Size(292, 27);
+            numberTextBox.Size = new Size(256, 23);
             numberTextBox.TabIndex = 1;
             toolTip1.SetToolTip(numberTextBox, "Type the number");
             numberTextBox.TextChanged += textBox1_TextChanged;
@@ -63,31 +64,29 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(14, 91);
+            label1.Location = new Point(12, 68);
             label1.Name = "label1";
-            label1.Size = new Size(104, 23);
+            label1.Size = new Size(84, 18);
             label1.TabIndex = 2;
             label1.Text = "Message:";
             label1.Click += label1_Click;
             // 
             // messageTextBox
             // 
-            messageTextBox.Location = new Point(14, 119);
-            messageTextBox.Margin = new Padding(3, 4, 3, 4);
+            messageTextBox.Location = new Point(12, 89);
             messageTextBox.Multiline = true;
             messageTextBox.Name = "messageTextBox";
             messageTextBox.PlaceholderText = "ex. Hello";
-            messageTextBox.Size = new Size(292, 340);
+            messageTextBox.Size = new Size(256, 239);
             messageTextBox.TabIndex = 3;
             toolTip1.SetToolTip(messageTextBox, "Type your message");
             messageTextBox.TextChanged += textBox2_TextChanged;
             // 
             // buttonSend
             // 
-            buttonSend.Location = new Point(221, 468);
-            buttonSend.Margin = new Padding(3, 4, 3, 4);
+            buttonSend.Location = new Point(193, 351);
             buttonSend.Name = "buttonSend";
-            buttonSend.Size = new Size(86, 31);
+            buttonSend.Size = new Size(75, 23);
             buttonSend.TabIndex = 4;
             buttonSend.Text = "Send";
             buttonSend.UseVisualStyleBackColor = true;
@@ -95,27 +94,40 @@
             // 
             // buttonCancel
             // 
-            buttonCancel.Location = new Point(128, 468);
-            buttonCancel.Margin = new Padding(3, 4, 3, 4);
+            buttonCancel.Location = new Point(112, 351);
             buttonCancel.Name = "buttonCancel";
-            buttonCancel.Size = new Size(86, 31);
+            buttonCancel.Size = new Size(75, 23);
             buttonCancel.TabIndex = 5;
             buttonCancel.Text = "Cancel";
             buttonCancel.UseVisualStyleBackColor = true;
             buttonCancel.Click += button2_Click;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(12, 333);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 7;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // MessagesForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(328, 509);
+            ClientSize = new Size(287, 382);
+            Controls.Add(button6);
             Controls.Add(buttonCancel);
             Controls.Add(buttonSend);
             Controls.Add(messageTextBox);
             Controls.Add(label1);
             Controls.Add(numberTextBox);
             Controls.Add(NumberLabel);
-            Margin = new Padding(3, 4, 3, 4);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "MessagesForm";
             Text = "Messages";
             ResumeLayout(false);
@@ -131,5 +143,6 @@
         private Button buttonSend;
         private Button buttonCancel;
         private ToolTip toolTip1;
+        private Button button6;
     }
 }

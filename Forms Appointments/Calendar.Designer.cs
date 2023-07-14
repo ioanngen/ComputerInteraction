@@ -64,27 +64,27 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(0, 11);
+            textBox1.Location = new Point(12, 11);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Appointment Title";
-            textBox1.Size = new Size(239, 23);
+            textBox1.Size = new Size(227, 23);
             textBox1.TabIndex = 3;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "0:00", "1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00" });
-            comboBox1.Location = new Point(0, 83);
+            comboBox1.Location = new Point(12, 83);
             comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(239, 23);
+            comboBox1.Size = new Size(227, 23);
             comboBox1.TabIndex = 4;
             comboBox1.Text = "Select Time";
             // 
             // button2
             // 
-            button2.Location = new Point(132, 110);
+            button2.Location = new Point(132, 119);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(107, 29);
@@ -97,16 +97,13 @@
             // dateTimePicker1
             // 
             dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            dateTimePicker1.Location = new Point(0, 56);
+            dateTimePicker1.Location = new Point(12, 56);
             dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.MaxDate = new DateTime(2030, 12, 31, 0, 0, 0, 0);
             dateTimePicker1.MinDate = new DateTime(2023, 6, 9, 0, 0, 0, 0);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(239, 23);
+            dateTimePicker1.Size = new Size(227, 23);
             dateTimePicker1.TabIndex = 8;
-            // 
-            // toolTip1
-            // 
             // 
             // button6
             // 
@@ -134,6 +131,8 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(listBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Calendar";
             Text = "Apointments";
             ResumeLayout(false);

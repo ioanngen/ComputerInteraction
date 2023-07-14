@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemindersForm));
             daycontainer = new FlowLayoutPanel();
             buttonPrevious = new Button();
             buttonNext = new Button();
@@ -42,6 +44,8 @@
             picBoxAlarm = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            toolTip1 = new ToolTip(components);
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)picBoxAlarm).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -173,6 +177,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
+            toolTip1.SetToolTip(pictureBox1, "Add Reminder");
             pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
@@ -183,12 +188,26 @@
             pictureBox2.Size = new Size(64, 64);
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
+            toolTip1.SetToolTip(pictureBox2, "View the List of Reminders");
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(12, 655);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 20;
+            button6.UseVisualStyleBackColor = true;
             // 
             // RemindersForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 707);
+            Controls.Add(button6);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(picBoxAlarm);
@@ -204,6 +223,7 @@
             Controls.Add(buttonPrevious);
             Controls.Add(daycontainer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "RemindersForm";
             Text = "Reminders and Alarms";
             Load += RemindersForm_Load;
@@ -230,5 +250,7 @@
         private PictureBox picBoxAlarm;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private ToolTip toolTip1;
+        private Button button6;
     }
 }

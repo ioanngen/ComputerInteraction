@@ -134,7 +134,9 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
             Name = "Payment";
             Text = "Payment";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -72,6 +72,7 @@
             Controls.Add(btnAdd);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
             Name = "ContactsForm";
             Text = "Contacts";
             Load += ContactsForm_Load;

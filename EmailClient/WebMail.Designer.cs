@@ -119,26 +119,26 @@
             // newMailToolStripMenuItem
             // 
             newMailToolStripMenuItem.Name = "newMailToolStripMenuItem";
-            newMailToolStripMenuItem.Size = new Size(180, 22);
+            newMailToolStripMenuItem.Size = new Size(129, 22);
             newMailToolStripMenuItem.Text = "New Mail";
             newMailToolStripMenuItem.Click += newMailToolStripMenuItem_Click;
             // 
             // openMailToolStripMenuItem
             // 
             openMailToolStripMenuItem.Name = "openMailToolStripMenuItem";
-            openMailToolStripMenuItem.Size = new Size(180, 22);
+            openMailToolStripMenuItem.Size = new Size(129, 22);
             openMailToolStripMenuItem.Text = "Open Mail";
             // 
             // printToolStripMenuItem
             // 
             printToolStripMenuItem.Name = "printToolStripMenuItem";
-            printToolStripMenuItem.Size = new Size(180, 22);
+            printToolStripMenuItem.Size = new Size(129, 22);
             printToolStripMenuItem.Text = "Print";
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Size = new Size(129, 22);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -152,43 +152,43 @@
             // undoToolStripMenuItem
             // 
             undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            undoToolStripMenuItem.Size = new Size(180, 22);
+            undoToolStripMenuItem.Size = new Size(138, 22);
             undoToolStripMenuItem.Text = "Undo";
             // 
             // redoToolStripMenuItem
             // 
             redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            redoToolStripMenuItem.Size = new Size(180, 22);
+            redoToolStripMenuItem.Size = new Size(138, 22);
             redoToolStripMenuItem.Text = "Redo";
             // 
             // cutToolStripMenuItem
             // 
             cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            cutToolStripMenuItem.Size = new Size(180, 22);
+            cutToolStripMenuItem.Size = new Size(138, 22);
             cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
             // 
             copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            copyToolStripMenuItem.Size = new Size(180, 22);
+            copyToolStripMenuItem.Size = new Size(138, 22);
             copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
             // 
             pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            pasteToolStripMenuItem.Size = new Size(180, 22);
+            pasteToolStripMenuItem.Size = new Size(138, 22);
             pasteToolStripMenuItem.Text = "Paste";
             // 
             // deleteMailToolStripMenuItem
             // 
             deleteMailToolStripMenuItem.Name = "deleteMailToolStripMenuItem";
-            deleteMailToolStripMenuItem.Size = new Size(180, 22);
+            deleteMailToolStripMenuItem.Size = new Size(138, 22);
             deleteMailToolStripMenuItem.Text = "Delete Mail";
             // 
             // moveToBinToolStripMenuItem
             // 
             moveToBinToolStripMenuItem.Name = "moveToBinToolStripMenuItem";
-            moveToBinToolStripMenuItem.Size = new Size(180, 22);
+            moveToBinToolStripMenuItem.Size = new Size(138, 22);
             moveToBinToolStripMenuItem.Text = "Move to Bin";
             // 
             // viewToolStripMenuItem
@@ -201,14 +201,14 @@
             // accountPropertiesToolStripMenuItem
             // 
             accountPropertiesToolStripMenuItem.Name = "accountPropertiesToolStripMenuItem";
-            accountPropertiesToolStripMenuItem.Size = new Size(180, 22);
+            accountPropertiesToolStripMenuItem.Size = new Size(158, 22);
             accountPropertiesToolStripMenuItem.Text = "Account Details";
             accountPropertiesToolStripMenuItem.Click += accountPropertiesToolStripMenuItem_Click;
             // 
             // inNewWindowToolStripMenuItem
             // 
             inNewWindowToolStripMenuItem.Name = "inNewWindowToolStripMenuItem";
-            inNewWindowToolStripMenuItem.Size = new Size(180, 22);
+            inNewWindowToolStripMenuItem.Size = new Size(158, 22);
             inNewWindowToolStripMenuItem.Text = "In New Window";
             // 
             // helpToolStripMenuItem
@@ -221,7 +221,7 @@
             // viewHelpToolStripMenuItem
             // 
             viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            viewHelpToolStripMenuItem.Size = new Size(180, 22);
+            viewHelpToolStripMenuItem.Size = new Size(127, 22);
             viewHelpToolStripMenuItem.Text = "View Help";
             viewHelpToolStripMenuItem.Click += viewHelpToolStripMenuItem_Click;
             // 
@@ -478,8 +478,10 @@
             Controls.Add(tableLayoutPanel1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
             Name = "WebMail";
             Text = "WebMail";
             menuStrip1.ResumeLayout(false);

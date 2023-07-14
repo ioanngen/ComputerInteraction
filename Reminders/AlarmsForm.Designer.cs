@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlarmsForm));
             picBoxReminders = new PictureBox();
             dateTimePicker1 = new DateTimePicker();
             btnStart = new Button();
             btnStop = new Button();
             lbAlarmTitle = new Label();
             lbAlarmStatus = new Label();
+            toolTip1 = new ToolTip(components);
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)picBoxReminders).BeginInit();
             SuspendLayout();
             // 
@@ -42,7 +46,7 @@
             picBoxReminders.Image = Properties.Resources.bell;
             picBoxReminders.Location = new Point(12, 12);
             picBoxReminders.Name = "picBoxReminders";
-            picBoxReminders.Size = new Size(64, 64);
+            picBoxReminders.Size = new Size(64, 67);
             picBoxReminders.TabIndex = 0;
             picBoxReminders.TabStop = false;
             picBoxReminders.Click += picBoxReminders_Click;
@@ -54,6 +58,7 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(156, 23);
             dateTimePicker1.TabIndex = 1;
+            toolTip1.SetToolTip(dateTimePicker1, "Set time for Alarm");
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // btnStart
@@ -63,6 +68,7 @@
             btnStart.Size = new Size(75, 23);
             btnStart.TabIndex = 2;
             btnStart.Text = "Start";
+            toolTip1.SetToolTip(btnStart, "Start the Alarm");
             btnStart.UseVisualStyleBackColor = true;
             btnStart.Click += btnStart_Click;
             // 
@@ -73,6 +79,7 @@
             btnStop.Size = new Size(75, 23);
             btnStop.TabIndex = 3;
             btnStop.Text = "Stop";
+            toolTip1.SetToolTip(btnStop, "Stop the Alarm");
             btnStop.UseVisualStyleBackColor = true;
             btnStop.Click += btnStop_Click;
             // 
@@ -95,11 +102,24 @@
             lbAlarmStatus.Text = "Status";
             lbAlarmStatus.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(222, 131);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 7;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // AlarmsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(275, 180);
+            Controls.Add(button6);
             Controls.Add(lbAlarmStatus);
             Controls.Add(lbAlarmTitle);
             Controls.Add(btnStop);
@@ -107,6 +127,7 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(picBoxReminders);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "AlarmsForm";
             Text = "AlarmsForm";
             Load += AlarmsForm_Load;
@@ -122,5 +143,7 @@
         private Button btnStop;
         private Label lbAlarmTitle;
         private Label lbAlarmStatus;
+        private ToolTip toolTip1;
+        private Button button6;
     }
 }

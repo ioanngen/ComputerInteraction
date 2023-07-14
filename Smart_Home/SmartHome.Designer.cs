@@ -91,6 +91,8 @@
             trackBar1 = new TrackBar();
             label13 = new Label();
             label14 = new Label();
+            toolTip1 = new ToolTip(components);
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)backroundpicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
@@ -325,6 +327,7 @@
             groupBox2.TabIndex = 14;
             groupBox2.TabStop = false;
             groupBox2.Text = "Choose Camera:";
+            toolTip1.SetToolTip(groupBox2, "Choose Camera to see");
             // 
             // radBtnHull
             // 
@@ -532,6 +535,7 @@
             picDecTemp.SizeMode = PictureBoxSizeMode.StretchImage;
             picDecTemp.TabIndex = 48;
             picDecTemp.TabStop = false;
+            toolTip1.SetToolTip(picDecTemp, "Decreae Temperature");
             picDecTemp.Click += picDecTemp_Click;
             // 
             // button14
@@ -541,6 +545,7 @@
             button14.Size = new Size(65, 23);
             button14.TabIndex = 55;
             button14.Text = "On/Off";
+            toolTip1.SetToolTip(button14, "Turn On or Off the Lamp");
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
             // 
@@ -561,6 +566,7 @@
             picIncrTemp.SizeMode = PictureBoxSizeMode.StretchImage;
             picIncrTemp.TabIndex = 58;
             picIncrTemp.TabStop = false;
+            toolTip1.SetToolTip(picIncrTemp, "Increase Temperature");
             picIncrTemp.Click += picIncrTemp_Click;
             // 
             // picBoxCamera
@@ -591,6 +597,7 @@
             btnLivingRoom1.Size = new Size(65, 23);
             btnLivingRoom1.TabIndex = 60;
             btnLivingRoom1.Text = "On/Off";
+            toolTip1.SetToolTip(btnLivingRoom1, "Turn On or Off the Lamp");
             btnLivingRoom1.UseVisualStyleBackColor = true;
             btnLivingRoom1.Click += btnLivingRoom1_Click;
             // 
@@ -619,6 +626,7 @@
             btnLivingRoom2.Size = new Size(65, 23);
             btnLivingRoom2.TabIndex = 62;
             btnLivingRoom2.Text = "On/Off";
+            toolTip1.SetToolTip(btnLivingRoom2, "Turn On or Off the Lamp");
             btnLivingRoom2.UseVisualStyleBackColor = true;
             btnLivingRoom2.Click += btnLivingRoom2_Click;
             // 
@@ -638,6 +646,7 @@
             btnBedroom.Size = new Size(65, 23);
             btnBedroom.TabIndex = 64;
             btnBedroom.Text = "On/Off";
+            toolTip1.SetToolTip(btnBedroom, "Turn On or Off the Lamp");
             btnBedroom.UseVisualStyleBackColor = true;
             btnBedroom.Click += btnBedroom_Click;
             // 
@@ -657,6 +666,7 @@
             btnBathroom1.Size = new Size(65, 23);
             btnBathroom1.TabIndex = 66;
             btnBathroom1.Text = "On/Off";
+            toolTip1.SetToolTip(btnBathroom1, "Turn On or Off the Lamp");
             btnBathroom1.UseVisualStyleBackColor = true;
             btnBathroom1.Click += btnBathroom1_Click;
             // 
@@ -676,6 +686,7 @@
             btnKitchen.Size = new Size(65, 23);
             btnKitchen.TabIndex = 68;
             btnKitchen.Text = "On/Off";
+            toolTip1.SetToolTip(btnKitchen, "Turn On or Off the Lamp");
             btnKitchen.UseVisualStyleBackColor = true;
             btnKitchen.Click += btnKitchen_Click;
             // 
@@ -695,6 +706,7 @@
             btnHull.Size = new Size(65, 23);
             btnHull.TabIndex = 70;
             btnHull.Text = "On/Off";
+            toolTip1.SetToolTip(btnHull, "Turn On or Off the Lamp");
             btnHull.UseVisualStyleBackColor = true;
             btnHull.Click += btnHull_Click;
             // 
@@ -715,6 +727,7 @@
             btnBathroom2.Size = new Size(65, 23);
             btnBathroom2.TabIndex = 72;
             btnBathroom2.Text = "On/Off";
+            toolTip1.SetToolTip(btnBathroom2, "Turn On or Off the Lamp");
             btnBathroom2.UseVisualStyleBackColor = true;
             btnBathroom2.Click += btnBathroom2_Click;
             // 
@@ -755,11 +768,24 @@
             label14.TabIndex = 77;
             label14.Text = "Open";
             // 
+            // button4
+            // 
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.Location = new Point(12, 12);
+            button4.Margin = new Padding(3, 2, 3, 2);
+            button4.Name = "button4";
+            button4.Size = new Size(42, 41);
+            button4.TabIndex = 78;
+            button4.UseVisualStyleBackColor = true;
+            // 
             // SmartHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1078, 711);
+            Controls.Add(button4);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(trackBar1);
@@ -809,6 +835,9 @@
             Controls.Add(pictureBox1);
             Controls.Add(backroundpicture);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MaximumSize = new Size(1094, 750);
+            MinimumSize = new Size(1094, 750);
             Name = "SmartHome";
             Text = "Smart Home Control";
             ((System.ComponentModel.ISupportInitialize)backroundpicture).EndInit();
@@ -897,5 +926,7 @@
         private TrackBar trackBar1;
         private Label label13;
         private Label label14;
+        private ToolTip toolTip1;
+        private Button button4;
     }
 }

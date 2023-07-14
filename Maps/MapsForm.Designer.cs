@@ -28,85 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapsForm));
-            this.MapBox = new System.Windows.Forms.PictureBox();
-            this.Navigate = new System.Windows.Forms.Button();
-            this.DirectionsBox = new System.Windows.Forms.PictureBox();
-            this.NextPoint = new System.Windows.Forms.Button();
-            this.LocationTextArea = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.MapBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DirectionsBox)).BeginInit();
-            this.SuspendLayout();
+            MapBox = new PictureBox();
+            Navigate = new Button();
+            DirectionsBox = new PictureBox();
+            NextPoint = new Button();
+            LocationTextArea = new TextBox();
+            toolTip1 = new ToolTip(components);
+            button6 = new Button();
+            ((System.ComponentModel.ISupportInitialize)MapBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DirectionsBox).BeginInit();
+            SuspendLayout();
             // 
             // MapBox
             // 
-            this.MapBox.Image = ((System.Drawing.Image)(resources.GetObject("MapBox.Image")));
-            this.MapBox.Location = new System.Drawing.Point(42, 33);
-            this.MapBox.Name = "MapBox";
-            this.MapBox.Size = new System.Drawing.Size(423, 282);
-            this.MapBox.TabIndex = 0;
-            this.MapBox.TabStop = false;
+            MapBox.Image = (Image)resources.GetObject("MapBox.Image");
+            MapBox.Location = new Point(12, 11);
+            MapBox.Margin = new Padding(3, 2, 3, 2);
+            MapBox.Name = "MapBox";
+            MapBox.Size = new Size(370, 212);
+            MapBox.TabIndex = 0;
+            MapBox.TabStop = false;
+            toolTip1.SetToolTip(MapBox, "Map");
             // 
             // Navigate
             // 
-            this.Navigate.FlatAppearance.BorderSize = 0;
-            this.Navigate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Navigate.Image = ((System.Drawing.Image)(resources.GetObject("Navigate.Image")));
-            this.Navigate.Location = new System.Drawing.Point(409, 467);
-            this.Navigate.Name = "Navigate";
-            this.Navigate.Size = new System.Drawing.Size(56, 61);
-            this.Navigate.TabIndex = 1;
-            this.Navigate.UseVisualStyleBackColor = true;
-            this.Navigate.Click += new System.EventHandler(this.Navigate_Click);
+            Navigate.FlatAppearance.BorderSize = 0;
+            Navigate.FlatStyle = FlatStyle.Flat;
+            Navigate.Image = (Image)resources.GetObject("Navigate.Image");
+            Navigate.Location = new Point(405, 356);
+            Navigate.Margin = new Padding(3, 2, 3, 2);
+            Navigate.Name = "Navigate";
+            Navigate.Size = new Size(60, 61);
+            Navigate.TabIndex = 1;
+            toolTip1.SetToolTip(Navigate, "Search for Places");
+            Navigate.UseVisualStyleBackColor = true;
+            Navigate.Click += Navigate_Click;
             // 
             // DirectionsBox
             // 
-            this.DirectionsBox.Image = ((System.Drawing.Image)(resources.GetObject("DirectionsBox.Image")));
-            this.DirectionsBox.Location = new System.Drawing.Point(42, 335);
-            this.DirectionsBox.Name = "DirectionsBox";
-            this.DirectionsBox.Size = new System.Drawing.Size(361, 115);
-            this.DirectionsBox.TabIndex = 3;
-            this.DirectionsBox.TabStop = false;
+            DirectionsBox.Image = (Image)resources.GetObject("DirectionsBox.Image");
+            DirectionsBox.Location = new Point(12, 238);
+            DirectionsBox.Margin = new Padding(3, 2, 3, 2);
+            DirectionsBox.Name = "DirectionsBox";
+            DirectionsBox.Size = new Size(370, 121);
+            DirectionsBox.TabIndex = 3;
+            DirectionsBox.TabStop = false;
+            toolTip1.SetToolTip(DirectionsBox, "Directions");
             // 
             // NextPoint
             // 
-            this.NextPoint.Enabled = false;
-            this.NextPoint.FlatAppearance.BorderSize = 0;
-            this.NextPoint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NextPoint.Image = ((System.Drawing.Image)(resources.GetObject("NextPoint.Image")));
-            this.NextPoint.Location = new System.Drawing.Point(409, 361);
-            this.NextPoint.Name = "NextPoint";
-            this.NextPoint.Size = new System.Drawing.Size(56, 62);
-            this.NextPoint.TabIndex = 4;
-            this.NextPoint.UseVisualStyleBackColor = true;
-            this.NextPoint.Click += new System.EventHandler(this.NextPoint_Click);
+            NextPoint.Enabled = false;
+            NextPoint.FlatAppearance.BorderSize = 0;
+            NextPoint.FlatStyle = FlatStyle.Flat;
+            NextPoint.Image = (Image)resources.GetObject("NextPoint.Image");
+            NextPoint.Location = new Point(405, 271);
+            NextPoint.Margin = new Padding(3, 2, 3, 2);
+            NextPoint.Name = "NextPoint";
+            NextPoint.Size = new Size(46, 56);
+            NextPoint.TabIndex = 4;
+            toolTip1.SetToolTip(NextPoint, "Next");
+            NextPoint.UseVisualStyleBackColor = true;
+            NextPoint.Click += NextPoint_Click;
             // 
             // LocationTextArea
             // 
-            this.LocationTextArea.Location = new System.Drawing.Point(42, 481);
-            this.LocationTextArea.Multiline = true;
-            this.LocationTextArea.Name = "LocationTextArea";
-            this.LocationTextArea.Size = new System.Drawing.Size(361, 47);
-            this.LocationTextArea.TabIndex = 5;
+            LocationTextArea.Location = new Point(12, 376);
+            LocationTextArea.Margin = new Padding(3, 2, 3, 2);
+            LocationTextArea.Multiline = true;
+            LocationTextArea.Name = "LocationTextArea";
+            LocationTextArea.Size = new Size(370, 36);
+            LocationTextArea.TabIndex = 5;
+            toolTip1.SetToolTip(LocationTextArea, "Type here your Destination");
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(433, 11);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 7;
+            button6.UseVisualStyleBackColor = true;
             // 
             // MapsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 554);
-            this.Controls.Add(this.LocationTextArea);
-            this.Controls.Add(this.NextPoint);
-            this.Controls.Add(this.DirectionsBox);
-            this.Controls.Add(this.Navigate);
-            this.Controls.Add(this.MapBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "MapsForm";
-            this.Text = "Map Navigation";
-            ((System.ComponentModel.ISupportInitialize)(this.MapBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DirectionsBox)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(487, 435);
+            Controls.Add(button6);
+            Controls.Add(LocationTextArea);
+            Controls.Add(NextPoint);
+            Controls.Add(DirectionsBox);
+            Controls.Add(Navigate);
+            Controls.Add(MapBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            Name = "MapsForm";
+            Text = "Map Navigation";
+            ((System.ComponentModel.ISupportInitialize)MapBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DirectionsBox).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -116,5 +143,7 @@
         private PictureBox DirectionsBox;
         private Button NextPoint;
         private TextBox LocationTextArea;
+        private ToolTip toolTip1;
+        private Button button6;
     }
 }

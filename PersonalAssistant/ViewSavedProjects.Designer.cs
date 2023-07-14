@@ -28,53 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewSavedProjects));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Exit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            dataGridView1 = new DataGridView();
+            Exit = new Button();
+            toolTip1 = new ToolTip(components);
+            button6 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(462, 198);
-            this.dataGridView1.TabIndex = 0;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(10, 9);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(404, 148);
+            dataGridView1.TabIndex = 0;
+            toolTip1.SetToolTip(dataGridView1, "These are your Saved Projects");
             // 
             // Exit
             // 
-            this.Exit.FlatAppearance.BorderSize = 0;
-            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
-            this.Exit.Location = new System.Drawing.Point(197, 231);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(80, 68);
-            this.Exit.TabIndex = 1;
-            this.Exit.UseVisualStyleBackColor = true;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            Exit.FlatAppearance.BorderSize = 0;
+            Exit.FlatStyle = FlatStyle.Flat;
+            Exit.Image = (Image)resources.GetObject("Exit.Image");
+            Exit.Location = new Point(172, 161);
+            Exit.Margin = new Padding(3, 2, 3, 2);
+            Exit.Name = "Exit";
+            Exit.Size = new Size(70, 63);
+            Exit.TabIndex = 1;
+            toolTip1.SetToolTip(Exit, "Exit");
+            Exit.UseVisualStyleBackColor = true;
+            Exit.Click += Exit_Click;
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(372, 183);
+            button6.Margin = new Padding(3, 2, 3, 2);
+            button6.Name = "button6";
+            button6.Size = new Size(42, 41);
+            button6.TabIndex = 7;
+            button6.UseVisualStyleBackColor = true;
             // 
             // ViewSavedProjects
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 311);
-            this.Controls.Add(this.Exit);
-            this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "ViewSavedProjects";
-            this.Text = "ViewSavedProjects";
-            this.Load += new System.EventHandler(this.ViewSavedProjects_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(426, 233);
+            Controls.Add(button6);
+            Controls.Add(Exit);
+            Controls.Add(dataGridView1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            Name = "ViewSavedProjects";
+            Text = "ViewSavedProjects";
+            Load += ViewSavedProjects_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private DataGridView dataGridView1;
         private Button Exit;
+        private ToolTip toolTip1;
+        private Button button6;
     }
 }

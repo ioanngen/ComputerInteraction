@@ -126,7 +126,11 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(listBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            MaximumSize = new Size(609, 346);
+            MinimumSize = new Size(609, 346);
             Name = "ShoppingList";
             Text = "Shopping List";
             ResumeLayout(false);

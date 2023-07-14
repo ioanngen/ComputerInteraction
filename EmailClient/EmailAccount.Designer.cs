@@ -191,6 +191,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(380, 421);
             Controls.Add(groupBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MaximumSize = new Size(396, 460);

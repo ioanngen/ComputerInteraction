@@ -102,7 +102,9 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(listBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
             Name = "Order";
             Text = "Form1";
             ResumeLayout(false);

@@ -81,7 +81,7 @@ namespace PersonalAssistant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newform = new CallsAndMessagesForm();
+            var newform = new CallsAndMessages.CallsAndMessagesForm();
             newform.Show();
         }
 
@@ -93,10 +93,10 @@ namespace PersonalAssistant
         private void button13_Click(object sender, EventArgs e)
         {
             newsIndex++;
-            if (newsIndex>4)
+            if (newsIndex > 4)
             {
                 pbNews.Image = Image.FromFile(NewsImages[0]);
-                newsIndex= 0;
+                newsIndex = 0;
             }
             else
             {
@@ -114,7 +114,7 @@ namespace PersonalAssistant
         {
             var newform = new ProjectManagerMenuForm();
             newform.Show();
-            
+
         }
 
         private void button9_Click_1(object sender, EventArgs e)

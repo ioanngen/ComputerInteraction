@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddContact));
             btnCancel = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
@@ -38,6 +39,7 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            button3 = new Button();
             SuspendLayout();
             // 
             // btnCancel
@@ -127,11 +129,24 @@
             textBox4.Size = new Size(243, 23);
             textBox4.TabIndex = 9;
             // 
+            // button3
+            // 
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(12, 269);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(42, 41);
+            button3.TabIndex = 26;
+            button3.UseVisualStyleBackColor = true;
+            // 
             // AddContact
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(274, 298);
+            ClientSize = new Size(274, 321);
+            Controls.Add(button3);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -162,5 +177,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
+        private Button button3;
     }
 }

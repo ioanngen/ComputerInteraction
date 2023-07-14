@@ -27,6 +27,21 @@ namespace Smart_Home
             }
         }
 
+        public List<string> HouseCamera
+        {
+            get
+            {
+                return new List<string>
+                {
+                    path+@"LivingRoom1Pic.jpg",
+                    path+@"LivingRoom2Pic.jpg",
+                    path+@"GaragePic.png",
+                    path+@"KitchenPic.png",
+                    path+@"HullPic.png"
+                };
+            }
+        }
+
         public SmartHome()
         {
             InitializeComponent();
@@ -226,9 +241,9 @@ namespace Smart_Home
         private void picDecTemp_Click(object sender, EventArgs e)
         {
             currentTemp--;
-            if (currentTemp < 26)
+            if (currentTemp < 19)
             {
-                currentTemp = 25;
+                currentTemp = 18;
             }
             labelTemp.Text = currentTemp.ToString() + "°";
 
@@ -243,6 +258,42 @@ namespace Smart_Home
                 airConditionAngle = 0;
             }
             lbAirCondAngle.Text = "Air Conditioner Angle: " + airConditionAngle.ToString();
+        }
+
+        private void radBtnLivRoom1_CheckedChanged(object sender, EventArgs e)
+        {
+            picBoxCamera.Image = Image.FromFile(HouseCamera[0]);
+        }
+
+
+
+        private void radBtnLivRoom2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void picBoxCamera_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radBtnLivRoom2_CheckedChanged_1(object sender, EventArgs e)
+        {
+            picBoxCamera.Image = Image.FromFile(HouseCamera[1]);
+        }
+
+        private void radBtnGarage_CheckedChanged(object sender, EventArgs e)
+        {
+            picBoxCamera.Image = Image.FromFile(HouseCamera[2]);
+        }
+
+        private void radBtnKitchen_CheckedChanged(object sender, EventArgs e)
+        {
+            picBoxCamera.Image = Image.FromFile(HouseCamera[3]);
+        }
+
+        private void radBtnHull_CheckedChanged(object sender, EventArgs e)
+        {
+            picBoxCamera.Image = Image.FromFile(HouseCamera[4]);
         }
     }
 }

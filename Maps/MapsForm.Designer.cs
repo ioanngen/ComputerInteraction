@@ -99,6 +99,7 @@
             this.Controls.Add(this.DirectionsBox);
             this.Controls.Add(this.Navigate);
             this.Controls.Add(this.MapBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MapsForm";
             this.Text = "Map Navigation";
             ((System.ComponentModel.ISupportInitialize)(this.MapBox)).EndInit();

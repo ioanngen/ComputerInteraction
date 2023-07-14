@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             button1 = new Button();
             button2 = new Button();
@@ -42,6 +43,23 @@
             button11 = new Button();
             button12 = new Button();
             button14 = new Button();
+            pbNews = new PictureBox();
+            LoadNews = new Button();
+            TrafficBox = new PictureBox();
+            textBox2 = new TextBox();
+            pictureBox1 = new PictureBox();
+            textBox3 = new TextBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            textBox4 = new TextBox();
+            toolTip1 = new ToolTip(components);
+            ((System.ComponentModel.ISupportInitialize)pbNews).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TrafficBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -49,33 +67,40 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(10, 34);
+            button1.Location = new Point(23, 27);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(62, 52);
+            button1.Size = new Size(71, 65);
             button1.TabIndex = 0;
+            toolTip1.SetToolTip(button1, "Phone and Messages");
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(101, 41);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(141, 27);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(105, 38);
+            button2.Size = new Size(60, 59);
             button2.TabIndex = 1;
-            button2.Text = "Contacts";
+            toolTip1.SetToolTip(button2, "Contacts");
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
             // button4
             // 
-            button4.Location = new Point(20, 307);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.Location = new Point(126, 374);
             button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(186, 22);
+            button4.Size = new Size(83, 71);
             button4.TabIndex = 3;
-            button4.Text = "Smart Home";
+            toolTip1.SetToolTip(button4, "Smart Home");
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -84,430 +109,289 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(691, 316);
+            button5.Location = new Point(831, 449);
             button5.Margin = new Padding(0);
             button5.Name = "button5";
-            button5.Size = new Size(64, 53);
+            button5.Size = new Size(49, 43);
             button5.TabIndex = 4;
+            toolTip1.SetToolTip(button5, "Settings");
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click_1;
             // 
             // button6
             // 
-            button6.Location = new Point(123, 231);
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(23, 374);
             button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(82, 22);
+            button6.Size = new Size(71, 73);
             button6.TabIndex = 5;
-            button6.Text = "Navigation";
+            toolTip1.SetToolTip(button6, "Navigation");
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(109, 157);
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Image = (Image)resources.GetObject("button7.Image");
+            button7.Location = new Point(141, 190);
             button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(82, 22);
+            button7.Size = new Size(66, 60);
             button7.TabIndex = 6;
-            button7.Text = "Projects";
+            toolTip1.SetToolTip(button7, "Projects");
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
-            button8.Location = new Point(109, 118);
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Image = (Image)resources.GetObject("button8.Image");
+            button8.Location = new Point(134, 108);
             button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(82, 22);
+            button8.Size = new Size(75, 57);
             button8.TabIndex = 7;
-            button8.Text = "Emails";
+            toolTip1.SetToolTip(button8, "Emails");
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click_1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(10, 275);
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(262, 305);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search the Internet";
-            textBox1.Size = new Size(83, 23);
+            textBox1.Size = new Size(379, 27);
             textBox1.TabIndex = 8;
             // 
             // button9
             // 
-            button9.Location = new Point(109, 274);
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Image = (Image)resources.GetObject("button9.Image");
+            button9.Location = new Point(647, 295);
             button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
-            button9.Size = new Size(107, 22);
+            button9.Size = new Size(33, 38);
             button9.TabIndex = 9;
-            button9.Text = "Search";
+            toolTip1.SetToolTip(button9, "Search");
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
-            button10.Location = new Point(109, 196);
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatStyle = FlatStyle.Flat;
+            button10.Image = (Image)resources.GetObject("button10.Image");
+            button10.Location = new Point(23, 279);
             button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
-            button10.Size = new Size(82, 22);
+            button10.Size = new Size(73, 69);
             button10.TabIndex = 10;
-            button10.Text = "Music";
+            toolTip1.SetToolTip(button10, "Music");
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click_1;
             // 
             // button11
             // 
-            button11.Location = new Point(10, 231);
+            button11.FlatAppearance.BorderSize = 0;
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.Image = (Image)resources.GetObject("button11.Image");
+            button11.Location = new Point(126, 279);
             button11.Margin = new Padding(3, 2, 3, 2);
             button11.Name = "button11";
-            button11.Size = new Size(107, 22);
+            button11.Size = new Size(75, 60);
             button11.TabIndex = 11;
-            button11.Text = "Shop Online";
+            toolTip1.SetToolTip(button11, "Shop Online");
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click_1;
             // 
             // button12
             // 
-            button12.Location = new Point(10, 118);
+            button12.BackgroundImageLayout = ImageLayout.Stretch;
+            button12.FlatAppearance.BorderSize = 0;
+            button12.FlatStyle = FlatStyle.Flat;
+            button12.Image = (Image)resources.GetObject("button12.Image");
+            button12.Location = new Point(12, 100);
             button12.Margin = new Padding(3, 2, 3, 2);
             button12.Name = "button12";
-            button12.Size = new Size(82, 22);
+            button12.Size = new Size(94, 65);
             button12.TabIndex = 12;
-            button12.Text = "My Events";
+            toolTip1.SetToolTip(button12, "My Events");
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click_1;
             // 
             // button14
             // 
-            button14.Location = new Point(10, 157);
+            button14.BackgroundImageLayout = ImageLayout.Stretch;
+            button14.FlatAppearance.BorderSize = 0;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Image = (Image)resources.GetObject("button14.Image");
+            button14.Location = new Point(23, 190);
             button14.Margin = new Padding(3, 2, 3, 2);
             button14.Name = "button14";
-            button14.Size = new Size(82, 22);
+            button14.Size = new Size(71, 70);
             button14.TabIndex = 14;
-            button14.Text = "Reminders";
+            toolTip1.SetToolTip(button14, "Reminders");
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.pbNews = new System.Windows.Forms.PictureBox();
-            this.LoadNews = new System.Windows.Forms.Button();
-            this.TrafficBox = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNews)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TrafficBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(23, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 65);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(141, 27);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 59);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(126, 374);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 71);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(831, 449);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(49, 43);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(23, 374);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(71, 73);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(141, 190);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(66, 60);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(134, 108);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 57);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(262, 300);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Search the Internet";
-            this.textBox1.Size = new System.Drawing.Size(210, 27);
-            this.textBox1.TabIndex = 8;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(558, 300);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(122, 29);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Search";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click_1);
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(23, 279);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(73, 69);
-            this.button10.TabIndex = 10;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click_1);
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(126, 279);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 60);
-            this.button11.TabIndex = 11;
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click_1);
-            // 
-            // button12
-            // 
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(12, 100);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(94, 65);
-            this.button12.TabIndex = 12;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click_1);
-            // 
-            // button14
-            // 
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(23, 190);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(71, 70);
-            this.button14.TabIndex = 14;
-            this.button14.UseVisualStyleBackColor = true;
             // 
             // pbNews
             // 
-            this.pbNews.Image = ((System.Drawing.Image)(resources.GetObject("pbNews.Image")));
-            this.pbNews.Location = new System.Drawing.Point(262, 358);
-            this.pbNews.Name = "pbNews";
-            this.pbNews.Size = new System.Drawing.Size(418, 98);
-            this.pbNews.TabIndex = 15;
-            this.pbNews.TabStop = false;
+            pbNews.Image = (Image)resources.GetObject("pbNews.Image");
+            pbNews.Location = new Point(262, 358);
+            pbNews.Name = "pbNews";
+            pbNews.Size = new Size(418, 98);
+            pbNews.TabIndex = 15;
+            pbNews.TabStop = false;
+            toolTip1.SetToolTip(pbNews, "News");
             // 
             // LoadNews
             // 
-            this.LoadNews.FlatAppearance.BorderSize = 0;
-            this.LoadNews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoadNews.Image = ((System.Drawing.Image)(resources.GetObject("LoadNews.Image")));
-            this.LoadNews.Location = new System.Drawing.Point(698, 358);
-            this.LoadNews.Name = "LoadNews";
-            this.LoadNews.Size = new System.Drawing.Size(71, 69);
-            this.LoadNews.TabIndex = 16;
-            this.LoadNews.UseVisualStyleBackColor = true;
-            this.LoadNews.Click += new System.EventHandler(this.button13_Click);
+            LoadNews.FlatAppearance.BorderSize = 0;
+            LoadNews.FlatStyle = FlatStyle.Flat;
+            LoadNews.Image = (Image)resources.GetObject("LoadNews.Image");
+            LoadNews.Location = new Point(698, 358);
+            LoadNews.Name = "LoadNews";
+            LoadNews.Size = new Size(71, 69);
+            LoadNews.TabIndex = 16;
+            toolTip1.SetToolTip(LoadNews, "Next");
+            LoadNews.UseVisualStyleBackColor = true;
+            LoadNews.Click += button13_Click;
             // 
             // TrafficBox
             // 
-            this.TrafficBox.Image = ((System.Drawing.Image)(resources.GetObject("TrafficBox.Image")));
-            this.TrafficBox.Location = new System.Drawing.Point(738, 45);
-            this.TrafficBox.Name = "TrafficBox";
-            this.TrafficBox.Size = new System.Drawing.Size(65, 74);
-            this.TrafficBox.TabIndex = 17;
-            this.TrafficBox.TabStop = false;
+            TrafficBox.Image = (Image)resources.GetObject("TrafficBox.Image");
+            TrafficBox.Location = new Point(738, 45);
+            TrafficBox.Name = "TrafficBox";
+            TrafficBox.Size = new Size(65, 74);
+            TrafficBox.TabIndex = 17;
+            TrafficBox.TabStop = false;
+            toolTip1.SetToolTip(TrafficBox, "Sunny");
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(738, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(139, 20);
-            this.textBox2.TabIndex = 18;
-            this.textBox2.Text = "Weather in: Athens";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox2.BackColor = SystemColors.Window;
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Enabled = false;
+            textBox2.Location = new Point(738, 19);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(139, 20);
+            textBox2.TabIndex = 18;
+            textBox2.Text = "Weather in: Athens";
+            textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(812, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 74);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(812, 45);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(65, 74);
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
+            toolTip1.SetToolTip(pictureBox1, "High Temperature");
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(738, 145);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(139, 20);
-            this.textBox3.TabIndex = 21;
-            this.textBox3.Text = "Traffic in: Athens";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox3.BackColor = SystemColors.Window;
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Enabled = false;
+            textBox3.Location = new Point(738, 145);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(139, 20);
+            textBox3.TabIndex = 21;
+            textBox3.Text = "Traffic in: Athens";
+            textBox3.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(773, 171);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 74);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(773, 171);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(65, 74);
+            pictureBox3.TabIndex = 20;
+            pictureBox3.TabStop = false;
+            toolTip1.SetToolTip(pictureBox3, "Traffic Jam");
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(301, 87);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(208, 207);
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(301, 87);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(208, 207);
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(515, 45);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(156, 140);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(515, 45);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(156, 140);
+            pictureBox4.TabIndex = 23;
+            pictureBox4.TabStop = false;
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(530, 87);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(114, 20);
-            this.textBox4.TabIndex = 24;
-            this.textBox4.Text = "Welcome Spyros";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox4.BackColor = SystemColors.Window;
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Location = new Point(530, 87);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(114, 20);
+            textBox4.TabIndex = 24;
+            textBox4.Text = "Welcome User";
+            textBox4.TextAlign = HorizontalAlignment.Center;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(889, 501);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.TrafficBox);
-            this.Controls.Add(this.LoadNews);
-            this.Controls.Add(this.pbNews);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "MainMenu";
-            this.Text = "Personal Assisant";
-            ((System.ComponentModel.ISupportInitialize)(this.pbNews)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TrafficBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(889, 501);
+            Controls.Add(textBox4);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox2);
+            Controls.Add(textBox3);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox1);
+            Controls.Add(textBox2);
+            Controls.Add(TrafficBox);
+            Controls.Add(LoadNews);
+            Controls.Add(pbNews);
+            Controls.Add(button14);
+            Controls.Add(button12);
+            Controls.Add(button11);
+            Controls.Add(button10);
+            Controls.Add(button9);
+            Controls.Add(textBox1);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Name = "MainMenu";
+            Text = "Personal Assisant";
+            ((System.ComponentModel.ISupportInitialize)pbNews).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TrafficBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -535,5 +419,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
         private TextBox textBox4;
+        private ToolTip toolTip1;
     }
 }

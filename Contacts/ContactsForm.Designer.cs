@@ -92,10 +92,12 @@
             // 
             // textBox1
             // 
+            textBox1.ForeColor = Color.Gray;
             textBox1.Location = new Point(12, 21);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(289, 23);
             textBox1.TabIndex = 4;
+            textBox1.Text = "Search...";
             // 
             // textBox2
             // 
@@ -126,6 +128,7 @@
             button3.Size = new Size(42, 41);
             button3.TabIndex = 26;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // ContactsForm
             // 

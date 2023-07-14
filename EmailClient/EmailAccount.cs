@@ -30,5 +30,12 @@ namespace EmailClient
         {
             Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "In Account Details you can change your email account settings and Credentials.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

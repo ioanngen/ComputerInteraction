@@ -54,5 +54,14 @@ namespace PersonalAssistant
                 var result = MessageBox.Show(message, caption, MessageBoxButtons.OK);
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "In order to Register at the Personal Assistant, you have to fill all required fields with *," +
+                                    "and click at 'Register'. If you have already an account you can return to the Log In page by " +
+                                    "clicking 'Log In'. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

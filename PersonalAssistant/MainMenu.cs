@@ -36,10 +36,6 @@ namespace PersonalAssistant
         {
             InitializeComponent();
         }
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-        
-        }
 
         private void button8_Click_1(object sender, EventArgs e)
         {
@@ -73,11 +69,6 @@ namespace PersonalAssistant
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
             var newform = new ContactsForm();
             newform.Show();
         }
@@ -98,6 +89,7 @@ namespace PersonalAssistant
         {
             var newform = new RemindersForm();
             newform.Show();
+        }
         private void button13_Click(object sender, EventArgs e)
         {
             newsIndex++;

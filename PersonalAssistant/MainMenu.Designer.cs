@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             button1 = new Button();
             button2 = new Button();
-            button3 = new Button();
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
@@ -42,7 +41,6 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
-            button13 = new Button();
             button14 = new Button();
             SuspendLayout();
             // 
@@ -69,16 +67,6 @@
             button2.Text = "Contacts";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(570, 34);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(186, 22);
-            button3.TabIndex = 2;
-            button3.Text = "Weather and Traffic";
-            button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -182,16 +170,6 @@
             button12.Text = "My Events";
             button12.UseVisualStyleBackColor = true;
             // 
-            // button13
-            // 
-            button13.Location = new Point(295, 286);
-            button13.Margin = new Padding(3, 2, 3, 2);
-            button13.Name = "button13";
-            button13.Size = new Size(282, 51);
-            button13.TabIndex = 13;
-            button13.Text = "News";
-            button13.UseVisualStyleBackColor = true;
-            // 
             // button14
             // 
             button14.Location = new Point(10, 157);
@@ -266,6 +244,7 @@
             this.button4.Size = new System.Drawing.Size(83, 71);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 

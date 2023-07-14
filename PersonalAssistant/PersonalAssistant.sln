@@ -21,7 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart_Home", "..\Smart_Home
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallsAndMessages", "..\CallsAndMessages\CallsAndMessages.csproj", "{B8CF1011-064B-44BD-8886-8D18620A87E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminders", "..\Reminders\Reminders.csproj", "{704E2022-9820-451A-A821-1C980509160A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminders", "..\Reminders\Reminders.csproj", "{704E2022-9820-451A-A821-1C980509160A}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maps", "..\Maps\Maps.csproj", "{EF41A389-828D-4C9C-8E7E-60BDD6A6DCA7}"
 EndProject
 Global

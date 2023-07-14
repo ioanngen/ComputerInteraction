@@ -295,5 +295,16 @@ namespace Smart_Home
         {
             picBoxCamera.Image = Image.FromFile(HouseCamera[4]);
         }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            const string message = "This is a Smart home app. Using the buttons \"on/off\" you can switch on and off the lights of the house. " +
+                                   "On the right panel, you can control the temperature of all rooms or every single room individually. Press \'+\' " +
+                                   "to increase temperature, or press '-' to decrease it. Below you can choose modes about swing, type of heating/ " + 
+                                   "cooling, etc. On the left right side of the panel you can control the water heater (its on for 15 minutes max) " + 
+                                   "and the garage door. Finally, on the down left side, you can keep track of the cameras.";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

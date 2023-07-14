@@ -79,5 +79,16 @@ namespace Reminders
             timer.Stop();
             lbAlarmStatus.Text = "Stop";
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "This is an alarm app. On the date/time pannel you can choose when you want the alarm to ring. \n" +
+                                   "Afterwards you can choose to activate the alarm by pressing the start button, or deactivate it " +
+                                   "by pressing the stop button. \n" +
+                                   "You are always informed for the status of the alarm and you should hear it ring when the time you  " +
+                                   "chose arrives. \nBy clicking the bell on the upper left side of the window you return to the reminders. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -27,5 +27,78 @@ namespace CallsAndMessages
             var newform = new PhoneCallPopup();
             newform.Show();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "1";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "2";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "3";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "4";
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "5";
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "6";
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "7";
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "8";
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "9";
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "*";
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "0";
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "#";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "Use the keyboard to type your number, or type it in the textbox. " +
+                                   "In the middle there is a green circle with a phone in it to call the number you have typed.";                                   ;
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

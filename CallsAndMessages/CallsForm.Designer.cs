@@ -70,6 +70,7 @@
             textBox1.Size = new Size(204, 23);
             textBox1.TabIndex = 0;
             toolTip1.SetToolTip(textBox1, "Dial the number you want call");
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 
@@ -79,6 +80,7 @@
             pictureBox1.Size = new Size(64, 64);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -88,6 +90,7 @@
             pictureBox2.Size = new Size(64, 64);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
@@ -97,6 +100,7 @@
             pictureBox3.Size = new Size(64, 64);
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
@@ -106,6 +110,7 @@
             pictureBox4.Size = new Size(64, 64);
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
@@ -115,6 +120,7 @@
             pictureBox5.Size = new Size(64, 64);
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
@@ -124,6 +130,7 @@
             pictureBox6.Size = new Size(64, 64);
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
@@ -133,6 +140,7 @@
             pictureBox7.Size = new Size(64, 64);
             pictureBox7.TabIndex = 7;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox8
             // 
@@ -142,6 +150,7 @@
             pictureBox8.Size = new Size(64, 64);
             pictureBox8.TabIndex = 8;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox9
             // 
@@ -151,6 +160,7 @@
             pictureBox9.Size = new Size(64, 64);
             pictureBox9.TabIndex = 9;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // pictureBox10
             // 
@@ -160,6 +170,7 @@
             pictureBox10.Size = new Size(64, 64);
             pictureBox10.TabIndex = 10;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
             // 
             // pictureBox11
             // 
@@ -169,6 +180,7 @@
             pictureBox11.Size = new Size(64, 64);
             pictureBox11.TabIndex = 11;
             pictureBox11.TabStop = false;
+            pictureBox11.Click += pictureBox11_Click;
             // 
             // pictureBox12
             // 
@@ -178,6 +190,7 @@
             pictureBox12.Size = new Size(64, 64);
             pictureBox12.TabIndex = 12;
             pictureBox12.TabStop = false;
+            pictureBox12.Click += pictureBox12_Click;
             // 
             // pictureBox13
             // 
@@ -201,6 +214,7 @@
             button6.Size = new Size(42, 41);
             button6.TabIndex = 14;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // CallsForm
             // 

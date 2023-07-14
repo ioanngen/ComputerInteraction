@@ -40,9 +40,9 @@
             // 
             CallsButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             CallsButton.Image = Properties.Resources.telephone_call;
-            CallsButton.Location = new Point(12, 19);
+            CallsButton.Location = new Point(12, 12);
             CallsButton.Name = "CallsButton";
-            CallsButton.Size = new Size(258, 250);
+            CallsButton.Size = new Size(258, 265);
             CallsButton.TabIndex = 0;
             toolTip1.SetToolTip(CallsButton, "Calls");
             CallsButton.UseVisualStyleBackColor = true;
@@ -71,6 +71,7 @@
             button6.Size = new Size(42, 41);
             button6.TabIndex = 7;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // CallsAndMessagesForm
             // 

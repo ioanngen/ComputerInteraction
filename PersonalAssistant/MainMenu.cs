@@ -119,7 +119,8 @@ namespace PersonalAssistant
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            var newform = new Search();
+            newform.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

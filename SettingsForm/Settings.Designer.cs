@@ -51,9 +51,15 @@
             textBox2 = new TextBox();
             textBox7 = new TextBox();
             button6 = new Button();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            trackBar1 = new TrackBar();
+            label6 = new Label();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -91,6 +97,11 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label6);
+            tabPage1.Controls.Add(trackBar1);
+            tabPage1.Controls.Add(checkBox3);
+            tabPage1.Controls.Add(checkBox2);
+            tabPage1.Controls.Add(checkBox1);
             tabPage1.Controls.Add(label5);
             tabPage1.Controls.Add(comboBox2);
             tabPage1.Controls.Add(radioButton1);
@@ -109,7 +120,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(28, 33);
+            label5.Location = new Point(301, 21);
             label5.Name = "label5";
             label5.Size = new Size(62, 15);
             label5.TabIndex = 9;
@@ -119,7 +130,7 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "English", "Greek", "German", "French", "Italian", "Spanish" });
-            comboBox2.Location = new Point(101, 31);
+            comboBox2.Location = new Point(374, 19);
             comboBox2.Margin = new Padding(3, 2, 3, 2);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(188, 23);
@@ -129,7 +140,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(101, 104);
+            radioButton1.Location = new Point(374, 92);
             radioButton1.Margin = new Padding(3, 2, 3, 2);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(110, 19);
@@ -141,7 +152,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(28, 67);
+            label4.Location = new Point(301, 55);
             label4.Name = "label4";
             label4.Size = new Size(56, 15);
             label4.TabIndex = 6;
@@ -151,7 +162,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Athens", "Patra", "Thessaloniki", "Kalamata", "Kifissia", "Glyfada", "Neos Voutzas", "Penteli", "Aigaleo" });
-            comboBox1.Location = new Point(101, 64);
+            comboBox1.Location = new Point(374, 52);
             comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(188, 23);
@@ -161,7 +172,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(19, 64);
+            label3.Location = new Point(304, 67);
             label3.Name = "label3";
             label3.Size = new Size(0, 15);
             label3.TabIndex = 2;
@@ -295,6 +306,52 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(21, 17);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(54, 19);
+            checkBox1.TabIndex = 10;
+            checkBox1.Text = "Wi-Fi";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(21, 42);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(78, 19);
+            checkBox2.TabIndex = 11;
+            checkBox2.Text = "Bluetooth";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(21, 67);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(72, 19);
+            checkBox3.TabIndex = 12;
+            checkBox3.Text = "Location";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // trackBar1
+            // 
+            trackBar1.Location = new Point(30, 198);
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new Size(165, 45);
+            trackBar1.TabIndex = 13;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(77, 180);
+            label6.Name = "label6";
+            label6.Size = new Size(62, 15);
+            label6.TabIndex = 14;
+            label6.Text = "Brightness";
+            // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -318,6 +375,7 @@
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ResumeLayout(false);
         }
 
@@ -344,5 +402,10 @@
         private Button button6;
         private Label label5;
         private ComboBox comboBox2;
+        private Label label6;
+        private TrackBar trackBar1;
+        private CheckBox checkBox3;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
     }
 }

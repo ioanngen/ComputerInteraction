@@ -23,5 +23,10 @@ namespace Shopping
             const string caption = "Help";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

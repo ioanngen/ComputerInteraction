@@ -94,6 +94,7 @@
             phoneNumLabel.Size = new Size(110, 22);
             phoneNumLabel.TabIndex = 4;
             phoneNumLabel.Text = "6972222222";
+            phoneNumLabel.Click += phoneNumLabel_Click;
             // 
             // button6
             // 
@@ -106,6 +107,7 @@
             button6.Size = new Size(42, 41);
             button6.TabIndex = 7;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // PhoneCallPopup
             // 

@@ -159,5 +159,16 @@ namespace Reminders
             var newform = new EventForm();
             newform.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "This is a reminders app. If you want to go to the alarms app, click the button on the upper right side of the window. " +
+                                   "Choose the day you would like to add an event. Then on the window that pops up you can type the event or change  the " +
+                                   "event date. On the middle down of the window you can choose between viewing a list of saved events, or add a new " +
+                                   "event on your desided date. Scroll through the months with the buttons previous or next on the right down side of the " +
+                                   "window. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

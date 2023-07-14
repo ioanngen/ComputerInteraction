@@ -92,7 +92,7 @@
             label13 = new Label();
             label14 = new Label();
             toolTip1 = new ToolTip(components);
-            button4 = new Button();
+            btnInfo = new Button();
             ((System.ComponentModel.ISupportInitialize)backroundpicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
@@ -768,24 +768,25 @@
             label14.TabIndex = 77;
             label14.Text = "Open";
             // 
-            // button4
+            // btnInfo
             // 
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(12, 12);
-            button4.Margin = new Padding(3, 2, 3, 2);
-            button4.Name = "button4";
-            button4.Size = new Size(42, 41);
-            button4.TabIndex = 78;
-            button4.UseVisualStyleBackColor = true;
+            btnInfo.FlatAppearance.BorderSize = 0;
+            btnInfo.FlatStyle = FlatStyle.Flat;
+            btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
+            btnInfo.Location = new Point(12, 12);
+            btnInfo.Margin = new Padding(3, 2, 3, 2);
+            btnInfo.Name = "btnInfo";
+            btnInfo.Size = new Size(42, 41);
+            btnInfo.TabIndex = 78;
+            btnInfo.UseVisualStyleBackColor = true;
+            btnInfo.Click += btnInfo_Click;
             // 
             // SmartHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1078, 711);
-            Controls.Add(button4);
+            Controls.Add(btnInfo);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(trackBar1);
@@ -927,6 +928,6 @@
         private Label label13;
         private Label label14;
         private ToolTip toolTip1;
-        private Button button4;
+        private Button btnInfo;
     }
 }

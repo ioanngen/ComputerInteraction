@@ -201,6 +201,7 @@
             button6.Size = new Size(42, 41);
             button6.TabIndex = 20;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // RemindersForm
             // 

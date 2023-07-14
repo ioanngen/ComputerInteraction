@@ -48,5 +48,15 @@ namespace CallsAndMessages
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            const string message = "Type the number you want your message to be sent on the top textbox. " +
+                                   "Type the message you want to be sent bellow. " +
+                                   "Press send to send the message, or Cancel if you dont want to send a message. \n" +
+                                   "You will be informed if the message is sent. ";
+            const string caption = "Help";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

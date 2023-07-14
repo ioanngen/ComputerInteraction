@@ -158,6 +158,7 @@
             Controls.Add(textBox1);
             Controls.Add(btnCancel);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "AddContact";
             Text = "AddContact";
             ResumeLayout(false);

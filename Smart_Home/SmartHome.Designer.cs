@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SmartHome));
             backroundpicture = new PictureBox();
             pictureBox1 = new PictureBox();
-            label1 = new Label();
+            labelTemp = new Label();
             label2 = new Label();
             button3 = new Button();
             comboBox1 = new ComboBox();
             button1 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            btnSwingUp = new Button();
+            btnSwingDown = new Button();
             button6 = new Button();
             groupBox1 = new GroupBox();
             radioButton9 = new RadioButton();
@@ -64,7 +64,7 @@
             button2 = new Button();
             button7 = new Button();
             label4 = new Label();
-            label13 = new Label();
+            lbAirCondAngle = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -73,23 +73,41 @@
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
-            pictureBox11 = new PictureBox();
-            OnOffButton = new Button();
+            picDecTemp = new PictureBox();
             button14 = new Button();
             lampImagelist = new ImageList(components);
-            pictureBox10 = new PictureBox();
+            picIncrTemp = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBoxLamp1 = new PictureBox();
-            lampPictureBox = new PictureBox();
+            btnLivingRoom1 = new Button();
+            picBoxLivRoom1 = new PictureBox();
+            picBoxLivRoom2 = new PictureBox();
+            btnLivingRoom2 = new Button();
+            picBoxBedroom = new PictureBox();
+            btnBedroom = new Button();
+            picBathroom1 = new PictureBox();
+            btnBathroom1 = new Button();
+            picKitchen = new PictureBox();
+            btnKitchen = new Button();
+            picHull = new PictureBox();
+            btnHull = new Button();
+            picBathroom2 = new PictureBox();
+            btnBathroom2 = new Button();
             ((System.ComponentModel.ISupportInitialize)backroundpicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picDecTemp).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picIncrTemp).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLamp1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lampPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxLivRoom1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxLivRoom2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxBedroom).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBathroom1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picKitchen).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picHull).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBathroom2).BeginInit();
             SuspendLayout();
             // 
             // backroundpicture
@@ -112,16 +130,16 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // label1
+            // labelTemp
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(909, 63);
-            label1.Name = "label1";
-            label1.Size = new Size(101, 55);
-            label1.TabIndex = 2;
-            label1.Text = "26°";
-            label1.Click += label1_Click;
+            labelTemp.AutoSize = true;
+            labelTemp.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTemp.Location = new Point(902, 63);
+            labelTemp.Name = "labelTemp";
+            labelTemp.Size = new Size(101, 55);
+            labelTemp.TabIndex = 2;
+            labelTemp.Text = "25°";
+            labelTemp.Click += label1_Click;
             // 
             // label2
             // 
@@ -165,26 +183,27 @@
             button1.Text = "Set Timer";
             button1.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSwingUp
             // 
-            button4.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.Location = new Point(837, 409);
-            button4.Name = "button4";
-            button4.Size = new Size(101, 40);
-            button4.TabIndex = 10;
-            button4.Text = "Swing Up";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            btnSwingUp.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSwingUp.Location = new Point(837, 409);
+            btnSwingUp.Name = "btnSwingUp";
+            btnSwingUp.Size = new Size(101, 40);
+            btnSwingUp.TabIndex = 10;
+            btnSwingUp.Text = "Swing Up";
+            btnSwingUp.UseVisualStyleBackColor = true;
+            btnSwingUp.Click += button4_Click;
             // 
-            // button5
+            // btnSwingDown
             // 
-            button5.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            button5.Location = new Point(955, 409);
-            button5.Name = "button5";
-            button5.Size = new Size(102, 40);
-            button5.TabIndex = 11;
-            button5.Text = "Swing Down";
-            button5.UseVisualStyleBackColor = true;
+            btnSwingDown.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSwingDown.Location = new Point(955, 409);
+            btnSwingDown.Name = "btnSwingDown";
+            btnSwingDown.Size = new Size(102, 40);
+            btnSwingDown.TabIndex = 11;
+            btnSwingDown.Text = "Swing Down";
+            btnSwingDown.UseVisualStyleBackColor = true;
+            btnSwingDown.Click += btnSwingDown_Click;
             // 
             // button6
             // 
@@ -477,15 +496,15 @@
             label4.Text = "Last Time on power: 10/07/2023 00:00:00";
             label4.Click += label4_Click;
             // 
-            // label13
+            // lbAirCondAngle
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(843, 451);
-            label13.Name = "label13";
-            label13.Size = new Size(207, 18);
-            label13.TabIndex = 29;
-            label13.Text = "Air Conditioner Angle: 30";
+            lbAirCondAngle.AutoSize = true;
+            lbAirCondAngle.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbAirCondAngle.Location = new Point(843, 451);
+            lbAirCondAngle.Name = "lbAirCondAngle";
+            lbAirCondAngle.Size = new Size(207, 18);
+            lbAirCondAngle.TabIndex = 29;
+            lbAirCondAngle.Text = "Air Conditioner Angle: 30";
             // 
             // label5
             // 
@@ -531,7 +550,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(368, 364);
+            label9.Location = new Point(372, 364);
             label9.Name = "label9";
             label9.Size = new Size(74, 14);
             label9.TabIndex = 43;
@@ -567,31 +586,22 @@
             label12.TabIndex = 46;
             label12.Text = "Living Room 2";
             // 
-            // pictureBox11
+            // picDecTemp
             // 
-            pictureBox11.Image = Properties.Resources.minus;
-            pictureBox11.Location = new Point(829, 177);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(40, 40);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 48;
-            pictureBox11.TabStop = false;
-            // 
-            // OnOffButton
-            // 
-            OnOffButton.Location = new Point(147, 183);
-            OnOffButton.Name = "OnOffButton";
-            OnOffButton.Size = new Size(62, 23);
-            OnOffButton.TabIndex = 49;
-            OnOffButton.Text = "On/Off";
-            OnOffButton.UseVisualStyleBackColor = true;
-            OnOffButton.Click += button8_Click;
+            picDecTemp.Image = Properties.Resources.minus;
+            picDecTemp.Location = new Point(829, 177);
+            picDecTemp.Name = "picDecTemp";
+            picDecTemp.Size = new Size(40, 40);
+            picDecTemp.SizeMode = PictureBoxSizeMode.StretchImage;
+            picDecTemp.TabIndex = 48;
+            picDecTemp.TabStop = false;
+            picDecTemp.Click += picDecTemp_Click;
             // 
             // button14
             // 
-            button14.Location = new Point(74, 393);
+            button14.Location = new Point(73, 390);
             button14.Name = "button14";
-            button14.Size = new Size(52, 23);
+            button14.Size = new Size(65, 23);
             button14.TabIndex = 55;
             button14.Text = "On/Off";
             button14.UseVisualStyleBackColor = true;
@@ -605,15 +615,16 @@
             lampImagelist.Images.SetKeyName(0, "Closed_light62x52.png");
             lampImagelist.Images.SetKeyName(1, "Opened_light62x52.png");
             // 
-            // pictureBox10
+            // picIncrTemp
             // 
-            pictureBox10.Image = Properties.Resources.plus;
-            pictureBox10.Location = new Point(1028, 177);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(40, 40);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 58;
-            pictureBox10.TabStop = false;
+            picIncrTemp.Image = Properties.Resources.plus;
+            picIncrTemp.Location = new Point(1028, 177);
+            picIncrTemp.Name = "picIncrTemp";
+            picIncrTemp.Size = new Size(40, 40);
+            picIncrTemp.SizeMode = PictureBoxSizeMode.StretchImage;
+            picIncrTemp.TabIndex = 58;
+            picIncrTemp.TabStop = false;
+            picIncrTemp.Click += picIncrTemp_Click;
             // 
             // pictureBox2
             // 
@@ -628,32 +639,170 @@
             // pictureBoxLamp1
             // 
             pictureBoxLamp1.Image = Properties.Resources.Closed_light62x52;
-            pictureBoxLamp1.Location = new Point(74, 325);
+            pictureBoxLamp1.Location = new Point(80, 325);
             pictureBoxLamp1.Name = "pictureBoxLamp1";
             pictureBoxLamp1.Size = new Size(52, 62);
             pictureBoxLamp1.TabIndex = 59;
             pictureBoxLamp1.TabStop = false;
             pictureBoxLamp1.Click += pictureBox3_Click;
             // 
-            // lampPictureBox
+            // btnLivingRoom1
             // 
-            lampPictureBox.Location = new Point(152, 115);
-            lampPictureBox.Name = "lampPictureBox";
-            lampPictureBox.Size = new Size(52, 62);
-            lampPictureBox.TabIndex = 60;
-            lampPictureBox.TabStop = false;
+            btnLivingRoom1.Location = new Point(139, 194);
+            btnLivingRoom1.Name = "btnLivingRoom1";
+            btnLivingRoom1.Size = new Size(65, 23);
+            btnLivingRoom1.TabIndex = 60;
+            btnLivingRoom1.Text = "On/Off";
+            btnLivingRoom1.UseVisualStyleBackColor = true;
+            btnLivingRoom1.Click += btnLivingRoom1_Click;
+            // 
+            // picBoxLivRoom1
+            // 
+            picBoxLivRoom1.Image = Properties.Resources.Closed_light62x52;
+            picBoxLivRoom1.Location = new Point(146, 126);
+            picBoxLivRoom1.Name = "picBoxLivRoom1";
+            picBoxLivRoom1.Size = new Size(52, 62);
+            picBoxLivRoom1.TabIndex = 61;
+            picBoxLivRoom1.TabStop = false;
+            // 
+            // picBoxLivRoom2
+            // 
+            picBoxLivRoom2.Image = Properties.Resources.Closed_light62x52;
+            picBoxLivRoom2.Location = new Point(390, 150);
+            picBoxLivRoom2.Name = "picBoxLivRoom2";
+            picBoxLivRoom2.Size = new Size(52, 62);
+            picBoxLivRoom2.TabIndex = 63;
+            picBoxLivRoom2.TabStop = false;
+            // 
+            // btnLivingRoom2
+            // 
+            btnLivingRoom2.Location = new Point(383, 218);
+            btnLivingRoom2.Name = "btnLivingRoom2";
+            btnLivingRoom2.Size = new Size(65, 23);
+            btnLivingRoom2.TabIndex = 62;
+            btnLivingRoom2.Text = "On/Off";
+            btnLivingRoom2.UseVisualStyleBackColor = true;
+            btnLivingRoom2.Click += btnLivingRoom2_Click;
+            // 
+            // picBoxBedroom
+            // 
+            picBoxBedroom.Image = Properties.Resources.Closed_light62x52;
+            picBoxBedroom.Location = new Point(578, 136);
+            picBoxBedroom.Name = "picBoxBedroom";
+            picBoxBedroom.Size = new Size(52, 62);
+            picBoxBedroom.TabIndex = 65;
+            picBoxBedroom.TabStop = false;
+            // 
+            // btnBedroom
+            // 
+            btnBedroom.Location = new Point(571, 204);
+            btnBedroom.Name = "btnBedroom";
+            btnBedroom.Size = new Size(65, 23);
+            btnBedroom.TabIndex = 64;
+            btnBedroom.Text = "On/Off";
+            btnBedroom.UseVisualStyleBackColor = true;
+            btnBedroom.Click += btnBedroom_Click;
+            // 
+            // picBathroom1
+            // 
+            picBathroom1.Image = Properties.Resources.Closed_light62x52;
+            picBathroom1.Location = new Point(319, 366);
+            picBathroom1.Name = "picBathroom1";
+            picBathroom1.Size = new Size(52, 62);
+            picBathroom1.TabIndex = 67;
+            picBathroom1.TabStop = false;
+            // 
+            // btnBathroom1
+            // 
+            btnBathroom1.Location = new Point(311, 430);
+            btnBathroom1.Name = "btnBathroom1";
+            btnBathroom1.Size = new Size(65, 23);
+            btnBathroom1.TabIndex = 66;
+            btnBathroom1.Text = "On/Off";
+            btnBathroom1.UseVisualStyleBackColor = true;
+            btnBathroom1.Click += btnBathroom1_Click;
+            // 
+            // picKitchen
+            // 
+            picKitchen.Image = Properties.Resources.Closed_light62x52;
+            picKitchen.Location = new Point(461, 313);
+            picKitchen.Name = "picKitchen";
+            picKitchen.Size = new Size(52, 62);
+            picKitchen.TabIndex = 69;
+            picKitchen.TabStop = false;
+            // 
+            // btnKitchen
+            // 
+            btnKitchen.Location = new Point(456, 378);
+            btnKitchen.Name = "btnKitchen";
+            btnKitchen.Size = new Size(65, 23);
+            btnKitchen.TabIndex = 68;
+            btnKitchen.Text = "On/Off";
+            btnKitchen.UseVisualStyleBackColor = true;
+            btnKitchen.Click += btnKitchen_Click;
+            // 
+            // picHull
+            // 
+            picHull.Image = Properties.Resources.Closed_light62x52;
+            picHull.Location = new Point(649, 343);
+            picHull.Name = "picHull";
+            picHull.Size = new Size(52, 62);
+            picHull.TabIndex = 71;
+            picHull.TabStop = false;
+            // 
+            // btnHull
+            // 
+            btnHull.Location = new Point(642, 411);
+            btnHull.Name = "btnHull";
+            btnHull.Size = new Size(65, 23);
+            btnHull.TabIndex = 70;
+            btnHull.Text = "On/Off";
+            btnHull.UseVisualStyleBackColor = true;
+            btnHull.Click += btnHull_Click;
+            // 
+            // picBathroom2
+            // 
+            picBathroom2.Image = Properties.Resources.Closed_light62x52;
+            picBathroom2.Location = new Point(762, 330);
+            picBathroom2.Name = "picBathroom2";
+            picBathroom2.Size = new Size(40, 51);
+            picBathroom2.SizeMode = PictureBoxSizeMode.StretchImage;
+            picBathroom2.TabIndex = 73;
+            picBathroom2.TabStop = false;
+            // 
+            // btnBathroom2
+            // 
+            btnBathroom2.Location = new Point(738, 385);
+            btnBathroom2.Name = "btnBathroom2";
+            btnBathroom2.Size = new Size(65, 23);
+            btnBathroom2.TabIndex = 72;
+            btnBathroom2.Text = "On/Off";
+            btnBathroom2.UseVisualStyleBackColor = true;
+            btnBathroom2.Click += btnBathroom2_Click;
             // 
             // SmartHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1078, 740);
-            Controls.Add(lampPictureBox);
+            Controls.Add(picBathroom2);
+            Controls.Add(btnBathroom2);
+            Controls.Add(picHull);
+            Controls.Add(btnHull);
+            Controls.Add(picKitchen);
+            Controls.Add(btnKitchen);
+            Controls.Add(picBathroom1);
+            Controls.Add(btnBathroom1);
+            Controls.Add(picBoxBedroom);
+            Controls.Add(btnBedroom);
+            Controls.Add(picBoxLivRoom2);
+            Controls.Add(btnLivingRoom2);
+            Controls.Add(picBoxLivRoom1);
+            Controls.Add(btnLivingRoom1);
             Controls.Add(pictureBoxLamp1);
-            Controls.Add(pictureBox10);
+            Controls.Add(picIncrTemp);
             Controls.Add(button14);
-            Controls.Add(OnOffButton);
-            Controls.Add(pictureBox11);
+            Controls.Add(picDecTemp);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label10);
@@ -662,7 +811,7 @@
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(label13);
+            Controls.Add(lbAirCondAngle);
             Controls.Add(label4);
             Controls.Add(button7);
             Controls.Add(button2);
@@ -671,13 +820,13 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            Controls.Add(btnSwingDown);
+            Controls.Add(btnSwingUp);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(button3);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(labelTemp);
             Controls.Add(pictureBox1);
             Controls.Add(backroundpicture);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -689,11 +838,17 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picDecTemp).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picIncrTemp).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLamp1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lampPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxLivRoom1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxLivRoom2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxBedroom).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBathroom1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picKitchen).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picHull).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBathroom2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -702,13 +857,13 @@
 
         private PictureBox backroundpicture;
         private PictureBox pictureBox1;
-        private Label label1;
+        private Label labelTemp;
         private Label label2;
         private Button button3;
         private ComboBox comboBox1;
         private Button button1;
-        private Button button4;
-        private Button button5;
+        private Button btnSwingUp;
+        private Button btnSwingDown;
         private Button button6;
         private GroupBox groupBox1;
         private RadioButton radioButton9;
@@ -734,7 +889,7 @@
         private Button button2;
         private Button button7;
         private Label label4;
-        private Label label13;
+        private Label lbAirCondAngle;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -743,14 +898,26 @@
         private Label label10;
         private Label label11;
         private Label label12;
-        private PictureBox pictureBox11;
-        private Button OnOffButton;
+        private PictureBox picDecTemp;
         private Button button14;
         private Button button16;
         private ImageList lampImagelist;
-        private PictureBox pictureBox10;
+        private PictureBox picIncrTemp;
         private PictureBox pictureBox2;
         private PictureBox pictureBoxLamp1;
-        private PictureBox lampPictureBox;
+        private Button btnLivingRoom1;
+        private PictureBox picBoxLivRoom1;
+        private PictureBox picBoxLivRoom2;
+        private Button btnLivingRoom2;
+        private PictureBox picBoxBedroom;
+        private Button btnBedroom;
+        private PictureBox picBathroom1;
+        private Button btnBathroom1;
+        private PictureBox picKitchen;
+        private Button btnKitchen;
+        private PictureBox picHull;
+        private Button btnHull;
+        private PictureBox picBathroom2;
+        private Button btnBathroom2;
     }
 }

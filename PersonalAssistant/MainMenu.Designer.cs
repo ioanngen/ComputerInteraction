@@ -162,23 +162,27 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(262, 299);
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(262, 305);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search the Internet";
-            textBox1.Size = new Size(366, 27);
+            textBox1.Size = new Size(379, 27);
             textBox1.TabIndex = 8;
             // 
             // button9
             // 
-            button9.Location = new Point(634, 299);
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Image = (Image)resources.GetObject("button9.Image");
+            button9.Location = new Point(647, 295);
             button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
-            button9.Size = new Size(46, 29);
+            button9.Size = new Size(33, 38);
             button9.TabIndex = 9;
             toolTip1.SetToolTip(button9, "Search");
             button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click_1;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -344,7 +348,7 @@
             textBox4.ReadOnly = true;
             textBox4.Size = new Size(114, 20);
             textBox4.TabIndex = 24;
-            textBox4.Text = "Welcome Spyros";
+            textBox4.Text = "Welcome User";
             textBox4.TextAlign = HorizontalAlignment.Center;
             // 
             // MainMenu

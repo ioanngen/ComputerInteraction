@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SettingsForm", "..\Settings
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts", "..\Contacts\Contacts.csproj", "{CA344686-5569-4FDF-8853-9AE56EF27925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maps", "..\Maps\Maps.csproj", "{EF41A389-828D-4C9C-8E7E-60BDD6A6DCA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maps", "..\Maps\Maps.csproj", "{EF41A389-828D-4C9C-8E7E-60BDD6A6DCA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

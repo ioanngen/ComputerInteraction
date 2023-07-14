@@ -129,6 +129,7 @@
             this.button7.Size = new System.Drawing.Size(66, 60);
             this.button7.TabIndex = 6;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -158,6 +159,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "Search";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // button10
             // 
@@ -342,6 +344,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MainMenu";
             this.Text = "Personal Assisant";
             ((System.ComponentModel.ISupportInitialize)(this.pbNews)).EndInit();

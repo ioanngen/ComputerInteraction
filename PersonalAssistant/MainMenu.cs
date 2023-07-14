@@ -37,12 +37,6 @@ namespace PersonalAssistant
         {
         
         }
-        
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button8_Click_1(object sender, EventArgs e)
         {
@@ -98,6 +92,17 @@ namespace PersonalAssistant
         {
             var newform = new MapsForm();
             newform.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var newform = new ProjectManagerMenuForm();
+            newform.Show();
+            
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
         }
     }
 }

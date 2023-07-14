@@ -80,17 +80,17 @@ namespace Maps
             {
                 MessageBox.Show("Please enter a valid location", "Location Error");
             }
-            if (LocationTextArea.Text!="" /*&& init*/)
+            if (LocationTextArea.Text!= "" && init)
             {
                 InitializePictureBoxes();
+                Navigate.Enabled = false;
                 init = false;
             }
             if (directionsIndex != 0 && mapsIndex != 0 && CanChangeLocation)
             {
-                InitializePictureBoxes();
                 MessageBox.Show("Loading directions for the new location", "Recalibrating");
+                InitializePictureBoxes();
             }
-            Navigate.Enabled = false;
         }
 
         public void InitializePictureBoxes()

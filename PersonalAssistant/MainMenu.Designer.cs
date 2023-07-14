@@ -353,7 +353,7 @@
             // 
             textBox4.BackColor = SystemColors.Window;
             textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Location = new Point(464, 65);
+            textBox4.Location = new Point(446, 73);
             textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
